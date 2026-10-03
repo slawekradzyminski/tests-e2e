@@ -1,0 +1,10 @@
+node_modules/
+.e2e/
+.playwright-cli/
+.env
+.env.*
+!.env.example
+exploration/
+.stack/
+evaluation/*-preview.png
+.DS_Store

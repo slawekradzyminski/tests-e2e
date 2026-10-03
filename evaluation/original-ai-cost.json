@@ -1,0 +1,183 @@
+{
+  "report": ".e2e/final/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 303,
+    "selected": 303,
+    "executed": 303,
+    "passed": 303,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 0
+  },
+  "totals": {
+    "steps": 6,
+    "modelCalls": 4,
+    "inputTokens": 25950,
+    "freshInputTokens": 5479,
+    "cacheReadTokens": 17492,
+    "cacheWriteTokens": 2979,
+    "outputTokens": 439,
+    "estimatedUsd": 0.0262939
+  },
+  "byApi": {
+    "agent.act": {
+      "steps": 4,
+      "modelCalls": 2,
+      "inputTokens": 19003,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16018,
+      "cacheWriteTokens": 2979,
+      "outputTokens": 167,
+      "estimatedUsd": 0.0123331
+    },
+    "agent.assert": {
+      "steps": 1,
+      "modelCalls": 1,
+      "inputTokens": 2557,
+      "freshInputTokens": 1868,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 147,
+      "estimatedUsd": 0.0053438
+    },
+    "agent.extract": {
+      "steps": 1,
+      "modelCalls": 1,
+      "inputTokens": 4390,
+      "freshInputTokens": 3605,
+      "cacheReadTokens": 785,
+      "cacheWriteTokens": 0,
+      "outputTokens": 125,
+      "estimatedUsd": 0.008617
+    }
+  },
+  "steps": [
+    {
+      "file": "tests/smoke.e2e.ts",
+      "titlePath": [
+        "Sonnet can navigate from login to registration"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Go to the registration page using the Register link. Do not submit or create an account.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 19003,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16018,
+      "cacheWriteTokens": 2979,
+      "outputTokens": 167,
+      "estimatedUsd": 0.0123331,
+      "durationMs": 4054,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Fill the checkout shipping address using street {street}, city {city}, state {state}, ZIP code {zipCode}, and country {country}. Leave the order unsubmitted.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 292,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The page confirms an order with PENDING status, an ordered item with quantity 2, total $25.00, and a shipping address in Warsaw, Poland.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2557,
+      "freshInputTokens": 1868,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 147,
+      "estimatedUsd": 0.0053438,
+      "durationMs": 3002
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (Low to High).",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 198,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.extract",
+      "label": "Read the visible product names in their display order, excluding categories and navigation.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4390,
+      "freshInputTokens": 3605,
+      "cacheReadTokens": 785,
+      "cacheWriteTokens": 0,
+      "outputTokens": 125,
+      "estimatedUsd": 0.008617,
+      "durationMs": 2508
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "recovers from no search results within the selected category"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Clear the product search using Clear Search. Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 167,
+      "actionCache": "self-finalized"
+    }
+  ],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}

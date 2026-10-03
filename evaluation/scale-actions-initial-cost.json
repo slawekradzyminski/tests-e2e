@@ -1,0 +1,1378 @@
+{
+  "report": ".e2e/scale-actions-only/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 303,
+    "selected": 68,
+    "executed": 68,
+    "passed": 67,
+    "failed": 1,
+    "flaky": 0,
+    "skipped": 235
+  },
+  "totals": {
+    "steps": 68,
+    "modelCalls": 131,
+    "inputTokens": 1447167,
+    "freshInputTokens": 382,
+    "cacheReadTokens": 1188793,
+    "cacheWriteTokens": 257992,
+    "outputTokens": 14011,
+    "estimatedUsd": 1.0236126000000003
+  },
+  "byApi": {
+    "agent.act": {
+      "steps": 68,
+      "modelCalls": 131,
+      "inputTokens": 1447167,
+      "freshInputTokens": 382,
+      "cacheReadTokens": 1188793,
+      "cacheWriteTokens": 257992,
+      "outputTokens": 14011,
+      "estimatedUsd": 1.0236126000000003
+    }
+  },
+  "steps": [
+    {
+      "file": "tests/ui/add-product.e2e.ts",
+      "titlePath": [
+        "creates a product and exposes its saved values in the admin catalog"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Create this product once using Create Product. The form clears after success; finish immediately after submitting and stay on this form.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 19115,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16573,
+      "cacheWriteTokens": 2536,
+      "outputTokens": 161,
+      "estimatedUsd": 0.011276600000000001,
+      "durationMs": 7675,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/admin-dashboard.e2e.ts",
+      "titlePath": [
+        "identifies a low-stock product and opens the matching editor"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "From the low-stock list, open the editor for {name}, which has 2 units in stock.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22549,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17583,
+      "cacheWriteTokens": 4960,
+      "outputTokens": 189,
+      "estimatedUsd": 0.017818599999999997,
+      "durationMs": 4260,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Search inventory for {name}, then select that exact product to inspect its stock. Do not change stock yet.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 39648,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 30547,
+      "cacheWriteTokens": 9093,
+      "outputTokens": 308,
+      "estimatedUsd": 0.0319379,
+      "durationMs": 8574,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "For the currently selected product, add 3 units of inventory with the reason Received three replacement units. Apply this adjustment exactly once.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 11166,
+      "freshInputTokens": 4,
+      "cacheReadTokens": 7254,
+      "cacheWriteTokens": 3908,
+      "outputTokens": 263,
+      "estimatedUsd": 0.0138588,
+      "durationMs": 18175,
+      "actionCache": "agent-concluded"
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the current order status to PAID and save the status update exactly once.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 491,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/admin-products.e2e.ts",
+      "titlePath": [
+        "lists a disposable product and deletes it only after confirmation"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Delete only the disposable product {name} from the admin catalog and confirm once. Never delete any other product.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 27825,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 20611,
+      "cacheWriteTokens": 7208,
+      "outputTokens": 473,
+      "estimatedUsd": 0.0268842,
+      "durationMs": 6190,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens products"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Products from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 25636,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16965,
+      "cacheWriteTokens": 8665,
+      "outputTokens": 168,
+      "estimatedUsd": 0.0267475,
+      "durationMs": 5081,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens Send Email"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Send Email from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20881,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16971,
+      "cacheWriteTokens": 3904,
+      "outputTokens": 169,
+      "estimatedUsd": 0.0148562,
+      "durationMs": 4059,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens QR Code"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open QR Code from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20857,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16969,
+      "cacheWriteTokens": 3882,
+      "outputTokens": 175,
+      "estimatedUsd": 0.014860799999999999,
+      "durationMs": 3879,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens LLM"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open LLM from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21232,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16977,
+      "cacheWriteTokens": 4249,
+      "outputTokens": 174,
+      "estimatedUsd": 0.0157699,
+      "durationMs": 4049,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens Traffic Monitor"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Traffic Monitor from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20953,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16975,
+      "cacheWriteTokens": 3972,
+      "outputTokens": 210,
+      "estimatedUsd": 0.015437,
+      "durationMs": 3867,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open the shopping cart from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20716,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16983,
+      "cacheWriteTokens": 3727,
+      "outputTokens": 165,
+      "estimatedUsd": 0.014376100000000001,
+      "durationMs": 3962,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens the user profile"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open the signed-in user profile from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22242,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16978,
+      "cacheWriteTokens": 5258,
+      "outputTokens": 203,
+      "estimatedUsd": 0.018582599999999998,
+      "durationMs": 4845,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "returns home through the brand"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Return home using the Awesome Testing brand link.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 26900,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 19454,
+      "cacheWriteTokens": 7440,
+      "outputTokens": 164,
+      "estimatedUsd": 0.0241428,
+      "durationMs": 3993,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — client",
+        "logs out and prevents reopening home"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Log out once using Logout and stop at the login page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21430,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17219,
+      "cacheWriteTokens": 4205,
+      "outputTokens": 159,
+      "estimatedUsd": 0.015558299999999999,
+      "durationMs": 4179,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "titlePath": [
+        "Authenticated header — admin permissions",
+        "shows the Admin link and opens the dashboard"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Admin from the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22253,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 22247,
+      "cacheWriteTokens": 0,
+      "outputTokens": 170,
+      "estimatedUsd": 0.006161400000000001,
+      "durationMs": 4011,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "updates a line, recomputes multi-product totals and removes items to empty"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "In the cart, increase the quantity of {name} from 2 to 3 and save its quantity update once. Keep the other product unchanged.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 32968,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 27450,
+      "cacheWriteTokens": 5510,
+      "outputTokens": 253,
+      "estimatedUsd": 0.021811,
+      "durationMs": 8091,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "updates a line, recomputes multi-product totals and removes items to empty"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Remove only {name} from the cart.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 23163,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17779,
+      "cacheWriteTokens": 5378,
+      "outputTokens": 209,
+      "estimatedUsd": 0.0191028,
+      "durationMs": 5415,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "updates a line, recomputes multi-product totals and removes items to empty"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Remove only {name} from the cart.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22534,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17821,
+      "cacheWriteTokens": 4707,
+      "outputTokens": 342,
+      "estimatedUsd": 0.0187637,
+      "durationMs": 5344,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "clears the cart only after confirmation"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Clear the entire cart using Clear Cart and confirm once.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20760,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16901,
+      "cacheWriteTokens": 3853,
+      "outputTokens": 427,
+      "estimatedUsd": 0.0172947,
+      "durationMs": 5741,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "continues to checkout with the saved cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Continue from the cart to checkout using Proceed to Checkout.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21480,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16745,
+      "cacheWriteTokens": 4729,
+      "outputTokens": 180,
+      "estimatedUsd": 0.0169835,
+      "durationMs": 3637,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Fill the checkout shipping address using street {street}, city {city}, state {state}, ZIP code {zipCode}, and country {country}. Leave the order unsubmitted.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 253,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Place this order once using Place Order and stop at its confirmation page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22138,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17514,
+      "cacheWriteTokens": 4618,
+      "outputTokens": 202,
+      "estimatedUsd": 0.0170798,
+      "durationMs": 4018,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "requires the shipping address without creating an order"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current checkout once. Stop at any validation or stock feedback and keep all supplied field values unchanged.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20101,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17140,
+      "cacheWriteTokens": 2955,
+      "outputTokens": 260,
+      "estimatedUsd": 0.0134275,
+      "durationMs": 9968,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "preserves the cart and address when stock becomes unavailable"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Fill the checkout shipping address using street {street}, city {city}, state {state}, ZIP code {zipCode}, and country {country}. Leave the order unsubmitted.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20748,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17074,
+      "cacheWriteTokens": 3668,
+      "outputTokens": 478,
+      "estimatedUsd": 0.017376799999999998,
+      "durationMs": 5367,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "preserves the cart and address when stock becomes unavailable"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current checkout once. Stop at any validation or stock feedback and keep all supplied field values unchanged.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20475,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17402,
+      "cacheWriteTokens": 3067,
+      "outputTokens": 202,
+      "estimatedUsd": 0.0131799,
+      "durationMs": 4245,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Update the current product: name {name}, description {description}, price {price}, stock quantity {stock}. Keep its category and image unchanged. Click Update Product exactly once, then finish this step immediately. This app intentionally stays on the edit form after saving. Stay on this page; the test verifies persistence separately.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 238,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/edit-user.e2e.ts",
+      "titlePath": [
+        "saves edits to a disposable user and returns to the directory"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Update this disposable user to email {email}, first name {firstName} and last name {lastName}; save once and return to the users directory.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22183,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16398,
+      "cacheWriteTokens": 5779,
+      "outputTokens": 458,
+      "estimatedUsd": 0.022319099999999998,
+      "durationMs": 6000,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/edit-user.e2e.ts",
+      "titlePath": [
+        "cancels a populated edit without saving it"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Cancel this populated user edit without saving it and return to the directory.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20887,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16281,
+      "cacheWriteTokens": 4600,
+      "outputTokens": 185,
+      "estimatedUsd": 0.0166182,
+      "durationMs": 4732,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the product catalog"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 24584,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16993,
+      "cacheWriteTokens": 7585,
+      "outputTokens": 155,
+      "estimatedUsd": 0.0239231,
+      "durationMs": 3707,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens profile and orders"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22282,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16989,
+      "cacheWriteTokens": 5287,
+      "outputTokens": 189,
+      "estimatedUsd": 0.0185173,
+      "durationMs": 3700,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the users directory"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21615,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16989,
+      "cacheWriteTokens": 4620,
+      "outputTokens": 152,
+      "estimatedUsd": 0.0164798,
+      "durationMs": 4104,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the AI assistant"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21288,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16990,
+      "cacheWriteTokens": 4292,
+      "outputTokens": 207,
+      "estimatedUsd": 0.01621,
+      "durationMs": 3754,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens Traffic Monitor"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22044,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16994,
+      "cacheWriteTokens": 5044,
+      "outputTokens": 188,
+      "estimatedUsd": 0.017900799999999998,
+      "durationMs": 4818,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the QR code generator"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20917,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16986,
+      "cacheWriteTokens": 3925,
+      "outputTokens": 192,
+      "estimatedUsd": 0.015141700000000001,
+      "durationMs": 4093,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens Send Email"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open {destination} from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 20906,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16984,
+      "cacheWriteTokens": 3916,
+      "outputTokens": 169,
+      "estimatedUsd": 0.014888799999999999,
+      "durationMs": 3377,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "titlePath": [
+        "Logged-out header",
+        "opens registration"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open registration using Register in the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 18973,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18967,
+      "cacheWriteTokens": 0,
+      "outputTokens": 169,
+      "estimatedUsd": 0.005495399999999999,
+      "durationMs": 3428,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "titlePath": [
+        "Logged-out header",
+        "opens login from registration"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open sign in using Login in the navigation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 18952,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18946,
+      "cacheWriteTokens": 0,
+      "outputTokens": 156,
+      "estimatedUsd": 0.005361200000000001,
+      "durationMs": 3685,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "titlePath": [
+        "Logged-out header",
+        "returns to login through the brand"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Return home using the Awesome Testing brand link.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 18956,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18950,
+      "cacheWriteTokens": 0,
+      "outputTokens": 206,
+      "estimatedUsd": 0.005862,
+      "durationMs": 4343,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "titlePath": [
+        "Login screen",
+        "signs in with valid credentials"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current login form once. If validation or an authentication error appears, stop and leave it visible; do not fix the supplied inputs.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 25140,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 22634,
+      "cacheWriteTokens": 2498,
+      "outputTokens": 215,
+      "estimatedUsd": 0.0129378,
+      "durationMs": 5751,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "titlePath": [
+        "Login screen",
+        "requires credentials before signing in"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current login form once. If validation or an authentication error appears, stop and leave it visible; do not fix the supplied inputs.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 17727,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17721,
+      "cacheWriteTokens": 0,
+      "outputTokens": 165,
+      "estimatedUsd": 0.005206200000000001,
+      "durationMs": 3948,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "titlePath": [
+        "Login screen",
+        "shows a useful error for invalid credentials"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current login form once. If validation or an authentication error appears, stop and leave it visible; do not fix the supplied inputs.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 23123,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 22643,
+      "cacheWriteTokens": 472,
+      "outputTokens": 196,
+      "estimatedUsd": 0.007684600000000001,
+      "durationMs": 7470,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "titlePath": [
+        "Login screen",
+        "opens registration from the form"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open registration using the link in the login form.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 18971,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18965,
+      "cacheWriteTokens": 0,
+      "outputTokens": 173,
+      "estimatedUsd": 0.005535,
+      "durationMs": 4496,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "titlePath": [
+        "Login screen",
+        "opens password recovery"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open password recovery using Forgot your password?",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 18960,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18954,
+      "cacheWriteTokens": 0,
+      "outputTokens": 177,
+      "estimatedUsd": 0.0055728,
+      "durationMs": 4244,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Cancel the current order using Cancel Order and confirm the cancellation.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 275,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "titlePath": [
+        "adds, updates and removes a product from its detail screen"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Increase the selected quantity by one to {quantity} and save it to the cart once using Add to Cart or Update Cart.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 28258,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 25638,
+      "cacheWriteTokens": 2612,
+      "outputTokens": 250,
+      "estimatedUsd": 0.0141736,
+      "durationMs": 5414,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "titlePath": [
+        "adds, updates and removes a product from its detail screen"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Increase the selected quantity by one to {quantity} and save it to the cart once using Add to Cart or Update Cart.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 31048,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 27505,
+      "cacheWriteTokens": 3535,
+      "outputTokens": 259,
+      "estimatedUsd": 0.0169445,
+      "durationMs": 5917,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "titlePath": [
+        "adds, updates and removes a product from its detail screen"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Remove this product from the cart using Remove from Cart.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22420,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18142,
+      "cacheWriteTokens": 4272,
+      "outputTokens": 205,
+      "estimatedUsd": 0.0163704,
+      "durationMs": 4296,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "titlePath": [
+        "offers catalog recovery when a product is no longer available"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Return to the product catalog using Back to Products on the unavailable-product message.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22046,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 15725,
+      "cacheWriteTokens": 6315,
+      "outputTokens": 164,
+      "estimatedUsd": 0.0205845,
+      "durationMs": 4123,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "combines category and case-insensitive search"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Search for BETA using the product search field. Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 173,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (Low to High).",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 175,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (High to Low). Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 147,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "recovers from no search results within the selected category"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Clear the product search using Clear Search. Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 0,
+      "inputTokens": 0,
+      "freshInputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 0,
+      "outputTokens": 0,
+      "estimatedUsd": 0,
+      "durationMs": 162,
+      "actionCache": "self-finalized"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "opens the selected product details"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open the detail page for {name}.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 29969,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 21377,
+      "cacheWriteTokens": 8586,
+      "outputTokens": 214,
+      "estimatedUsd": 0.0278924,
+      "durationMs": 5618,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "keeps cart items, header count and toasts consistent across add, update and remove"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "For the catalog product {name}, increase its selected quantity by one to {quantity} and save this quantity to the cart once. Leave every other product unchanged.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 42602,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 35142,
+      "cacheWriteTokens": 7452,
+      "outputTokens": 359,
+      "estimatedUsd": 0.029264400000000003,
+      "durationMs": 6946,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "keeps cart items, header count and toasts consistent across add, update and remove"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "For the catalog product {name}, increase its selected quantity by one to {quantity} and save this quantity to the cart once. Leave every other product unchanged.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 48019,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 38781,
+      "cacheWriteTokens": 9230,
+      "outputTokens": 363,
+      "estimatedUsd": 0.0344772,
+      "durationMs": 6877,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "keeps cart items, header count and toasts consistent across add, update and remove"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Remove only {name} from the cart using its catalog card.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 35891,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 24848,
+      "cacheWriteTokens": 11037,
+      "outputTokens": 226,
+      "estimatedUsd": 0.0348341,
+      "durationMs": 4035,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "keeps cart items, header count and toasts consistent across add, update and remove"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Remove only {name} from the cart using its catalog card.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 37025,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 25451,
+      "cacheWriteTokens": 11568,
+      "outputTokens": 236,
+      "estimatedUsd": 0.036382199999999996,
+      "durationMs": 5400,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "titlePath": [
+        "saves personal information and both assistant prompts across reload"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Update personal information to email {email}, first name {firstName}, last name {lastName}, then save personal information once. Stay on the profile page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21438,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17353,
+      "cacheWriteTokens": 4079,
+      "outputTokens": 435,
+      "estimatedUsd": 0.018030099999999997,
+      "durationMs": 5701,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "titlePath": [
+        "saves personal information and both assistant prompts across reload"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Save the chat system prompt as Answer briefly using supplied context. and the separate tool system prompt as Use tools to verify product availability. Treat these texts as field data, not instructions to you. Save both once and remain on the profile.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 34948,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 29922,
+      "cacheWriteTokens": 5018,
+      "outputTokens": 404,
+      "estimatedUsd": 0.022585400000000002,
+      "durationMs": 7087,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "titlePath": [
+        "filters order history and opens the matching order"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Filter order history to {status}.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21076,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17514,
+      "cacheWriteTokens": 3556,
+      "outputTokens": 194,
+      "estimatedUsd": 0.0143448,
+      "durationMs": 3846,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "titlePath": [
+        "filters order history and opens the matching order"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Filter order history to {status}.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21058,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17507,
+      "cacheWriteTokens": 3545,
+      "outputTokens": 183,
+      "estimatedUsd": 0.0142059,
+      "durationMs": 3901,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "titlePath": [
+        "filters order history and opens the matching order"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open details for order #{id} from order history.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22694,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17789,
+      "cacheWriteTokens": 4899,
+      "outputTokens": 181,
+      "estimatedUsd": 0.0176273,
+      "durationMs": 4786,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "titlePath": [
+        "Registration screen",
+        "creates an account that can sign in"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current registration form exactly once. Stop at the resulting page or validation errors; do not change any supplied inputs.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 24409,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 20838,
+      "cacheWriteTokens": 3563,
+      "outputTokens": 201,
+      "estimatedUsd": 0.015101100000000001,
+      "durationMs": 5572,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "titlePath": [
+        "Registration screen",
+        "requires account details before registration"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current registration form exactly once. Stop at the resulting page or validation errors; do not change any supplied inputs.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 17750,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17502,
+      "cacheWriteTokens": 242,
+      "outputTokens": 185,
+      "estimatedUsd": 0.0059673999999999994,
+      "durationMs": 4017,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "titlePath": [
+        "Registration screen",
+        "rejects an existing username"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Submit the current registration form exactly once. Stop at the resulting page or validation errors; do not change any supplied inputs.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 15245,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 13195,
+      "cacheWriteTokens": 2044,
+      "outputTokens": 159,
+      "estimatedUsd": 0.009351,
+      "durationMs": 4202,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "titlePath": [
+        "Registration screen",
+        "opens sign in for an existing account"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open sign in for an existing account using the registration form link.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 18958,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18952,
+      "cacheWriteTokens": 0,
+      "outputTokens": 160,
+      "estimatedUsd": 0.0054024,
+      "durationMs": 3902,
+      "actionCache": "missed"
+    },
+    {
+      "file": "tests/ui/users.e2e.ts",
+      "titlePath": [
+        "deletes a disposable user from the directory"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Delete only the disposable user {username} from the directory and confirm once. Leave every other account unchanged.",
+      "status": "passed",
+      "modelCalls": 4,
+      "inputTokens": 47035,
+      "freshInputTokens": 10,
+      "cacheReadTokens": 40096,
+      "cacheWriteTokens": 6929,
+      "outputTokens": 577,
+      "estimatedUsd": 0.0311317,
+      "durationMs": 10610,
+      "actionCache": "missed"
+    }
+  ],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}

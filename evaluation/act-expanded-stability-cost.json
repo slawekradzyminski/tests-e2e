@@ -1,0 +1,728 @@
+{
+  "report": ".e2e/act-expanded-stability/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 315,
+    "selected": 18,
+    "executed": 18,
+    "passed": 18,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 297
+  },
+  "totals": {
+    "steps": 36,
+    "modelCalls": 74,
+    "inputTokens": 700296,
+    "freshInputTokens": 53382,
+    "cacheReadTokens": 563000,
+    "cacheWriteTokens": 83914,
+    "outputTokens": 9468,
+    "estimatedUsd": 0.523829
+  },
+  "byApi": {
+    "agent.act": {
+      "steps": 21,
+      "modelCalls": 59,
+      "inputTokens": 636451,
+      "freshInputTokens": 160,
+      "cacheReadTokens": 552377,
+      "cacheWriteTokens": 83914,
+      "outputTokens": 6720,
+      "estimatedUsd": 0.38778039999999997
+    },
+    "agent.assert": {
+      "steps": 12,
+      "modelCalls": 12,
+      "inputTokens": 50675,
+      "freshInputTokens": 42407,
+      "cacheReadTokens": 8268,
+      "cacheWriteTokens": 0,
+      "outputTokens": 1964,
+      "estimatedUsd": 0.1061076
+    },
+    "agent.extract": {
+      "steps": 3,
+      "modelCalls": 3,
+      "inputTokens": 13170,
+      "freshInputTokens": 10815,
+      "cacheReadTokens": 2355,
+      "cacheWriteTokens": 0,
+      "outputTokens": 784,
+      "estimatedUsd": 0.029941
+    }
+  },
+  "steps": [
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "For the currently selected product, add 3 units of inventory with the reason Received three replacement units. Apply this adjustment exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 35602,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 30312,
+      "cacheWriteTokens": 5282,
+      "outputTokens": 332,
+      "estimatedUsd": 0.022603400000000003,
+      "durationMs": 6209
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4727,
+      "freshInputTokens": 4038,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 192,
+      "estimatedUsd": 0.0101338,
+      "durationMs": 2622
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "For the currently selected product, add 3 units of inventory with the reason Received three replacement units. Apply this adjustment exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 35960,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 29962,
+      "cacheWriteTokens": 5990,
+      "outputTokens": 324,
+      "estimatedUsd": 0.024223400000000003,
+      "durationMs": 7185
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4745,
+      "freshInputTokens": 4056,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 180,
+      "estimatedUsd": 0.0100498,
+      "durationMs": 2622
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "For the currently selected product, add 3 units of inventory with the reason Received three replacement units. Apply this adjustment exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 35447,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 29918,
+      "cacheWriteTokens": 5521,
+      "outputTokens": 328,
+      "estimatedUsd": 0.023082099999999998,
+      "durationMs": 7227
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4542,
+      "freshInputTokens": 3853,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 158,
+      "estimatedUsd": 0.0094238,
+      "durationMs": 3151
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the current order status to PAID and save the status update exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 29002,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 26170,
+      "cacheWriteTokens": 2824,
+      "outputTokens": 242,
+      "estimatedUsd": 0.01473,
+      "durationMs": 5833
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The current order is PAID. The order still contains two units with a total of $25.00 and its shipping address is in Warsaw, Poland.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2811,
+      "freshInputTokens": 2122,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 164,
+      "estimatedUsd": 0.0060218,
+      "durationMs": 3195
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "Set the current order status to PAID and save the status update exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 29221,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 26308,
+      "cacheWriteTokens": 2905,
+      "outputTokens": 243,
+      "estimatedUsd": 0.0149701,
+      "durationMs": 7228
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "The current order is PAID. The order still contains two units with a total of $25.00 and its shipping address is in Warsaw, Poland.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2874,
+      "freshInputTokens": 2185,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 153,
+      "estimatedUsd": 0.0060378,
+      "durationMs": 3334
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "Set the current order status to PAID and save the status update exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 29232,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 26316,
+      "cacheWriteTokens": 2908,
+      "outputTokens": 234,
+      "estimatedUsd": 0.0148892,
+      "durationMs": 5302
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "The current order is PAID. The order still contains two units with a total of $25.00 and its shipping address is in Warsaw, Poland.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2877,
+      "freshInputTokens": 2188,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 166,
+      "estimatedUsd": 0.0061738,
+      "durationMs": 1960
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Update the current product: name {name}, description {description}, price {price}, stock quantity {stock}. Keep its category and image unchanged. Click Update Product exactly once, then finish this step immediately. This app intentionally stays on the edit form after saving. Stay on this page; the test verifies persistence separately.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 30624,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 27239,
+      "cacheWriteTokens": 3377,
+      "outputTokens": 474,
+      "estimatedUsd": 0.018646299999999998,
+      "durationMs": 7793
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The catalog row for Edited Product 85e1a6c9-185e-45f5-af3d-b2b36d68821e shows the updated price $24.75 and stock 6 together, associating these values with this edited product.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 6703,
+      "freshInputTokens": 6014,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 143,
+      "estimatedUsd": 0.0135958,
+      "durationMs": 3278
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "Update the current product: name {name}, description {description}, price {price}, stock quantity {stock}. Keep its category and image unchanged. Click Update Product exactly once, then finish this step immediately. This app intentionally stays on the edit form after saving. Stay on this page; the test verifies persistence separately.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 30645,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 27250,
+      "cacheWriteTokens": 3387,
+      "outputTokens": 471,
+      "estimatedUsd": 0.0186435,
+      "durationMs": 6825
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "The catalog row for Edited Product 83d1ae1f-5dc5-4639-bdb1-8d7c281c92c4 shows the updated price $24.75 and stock 6 together, associating these values with this edited product.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 6706,
+      "freshInputTokens": 6017,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 162,
+      "estimatedUsd": 0.0137918,
+      "durationMs": 5875
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "Update the current product: name {name}, description {description}, price {price}, stock quantity {stock}. Keep its category and image unchanged. Click Update Product exactly once, then finish this step immediately. This app intentionally stays on the edit form after saving. Stay on this page; the test verifies persistence separately.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 30630,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 27242,
+      "cacheWriteTokens": 3380,
+      "outputTokens": 481,
+      "estimatedUsd": 0.018724400000000002,
+      "durationMs": 8334
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "The catalog row for Edited Product cd0c2c1d-e5e6-4a3c-9e42-85e43249163f shows the updated price $24.75 and stock 6 together, associating these values with this edited product.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 6809,
+      "freshInputTokens": 6120,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 152,
+      "estimatedUsd": 0.0138978,
+      "durationMs": 2472
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Cancel the current order using Cancel Order and confirm the cancellation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 19225,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16554,
+      "cacheWriteTokens": 2665,
+      "outputTokens": 368,
+      "estimatedUsd": 0.0136653,
+      "durationMs": 5723
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The current order is CANCELLED, its original two-unit item and $25.00 total remain visible, and there is no action available to cancel it again.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2628,
+      "freshInputTokens": 1939,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 184,
+      "estimatedUsd": 0.0058558,
+      "durationMs": 6280
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "Cancel the current order using Cancel Order and confirm the cancellation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 19166,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16550,
+      "cacheWriteTokens": 2610,
+      "outputTokens": 318,
+      "estimatedUsd": 0.013027,
+      "durationMs": 4316
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "The current order is CANCELLED, its original two-unit item and $25.00 total remain visible, and there is no action available to cancel it again.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2624,
+      "freshInputTokens": 1935,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 159,
+      "estimatedUsd": 0.0055978,
+      "durationMs": 2696
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "Cancel the current order using Cancel Order and confirm the cancellation.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 19173,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 16553,
+      "cacheWriteTokens": 2614,
+      "outputTokens": 316,
+      "estimatedUsd": 0.0130176,
+      "durationMs": 4852
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "The current order is CANCELLED, its original two-unit item and $25.00 total remain visible, and there is no action available to cancel it again.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2629,
+      "freshInputTokens": 1940,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 151,
+      "estimatedUsd": 0.0055278,
+      "durationMs": 3548
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "combines category and case-insensitive search"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Search for BETA using the product search field. Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 23232,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18340,
+      "cacheWriteTokens": 4886,
+      "outputTokens": 230,
+      "estimatedUsd": 0.018195,
+      "durationMs": 5308
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "combines category and case-insensitive search"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "Search for BETA using the product search field. Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22882,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18168,
+      "cacheWriteTokens": 4708,
+      "outputTokens": 204,
+      "estimatedUsd": 0.017455599999999998,
+      "durationMs": 4062
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "combines category and case-insensitive search"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "Search for BETA using the product search field. Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22488,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17977,
+      "cacheWriteTokens": 4505,
+      "outputTokens": 204,
+      "estimatedUsd": 0.016909900000000002,
+      "durationMs": 5199
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (Low to High).",
+      "status": "passed",
+      "modelCalls": 4,
+      "inputTokens": 44775,
+      "freshInputTokens": 10,
+      "cacheReadTokens": 40181,
+      "cacheWriteTokens": 4584,
+      "outputTokens": 402,
+      "estimatedUsd": 0.0235362,
+      "durationMs": 8908
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.extract",
+      "label": "Read the visible product names in their display order, excluding categories and navigation.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4394,
+      "freshInputTokens": 3609,
+      "cacheReadTokens": 785,
+      "cacheWriteTokens": 0,
+      "outputTokens": 242,
+      "estimatedUsd": 0.009795,
+      "durationMs": 3435
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (High to Low). Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22119,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18161,
+      "cacheWriteTokens": 3952,
+      "outputTokens": 223,
+      "estimatedUsd": 0.0157542,
+      "durationMs": 4627
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (Low to High).",
+      "status": "passed",
+      "modelCalls": 4,
+      "inputTokens": 44726,
+      "freshInputTokens": 10,
+      "cacheReadTokens": 40152,
+      "cacheWriteTokens": 4564,
+      "outputTokens": 376,
+      "estimatedUsd": 0.023220400000000002,
+      "durationMs": 7974
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 1,
+      "api": "agent.extract",
+      "label": "Read the visible product names in their display order, excluding categories and navigation.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4384,
+      "freshInputTokens": 3599,
+      "cacheReadTokens": 785,
+      "cacheWriteTokens": 0,
+      "outputTokens": 263,
+      "estimatedUsd": 0.009985,
+      "durationMs": 4139
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (High to Low). Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22107,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18155,
+      "cacheWriteTokens": 3946,
+      "outputTokens": 207,
+      "estimatedUsd": 0.015578,
+      "durationMs": 3473
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (Low to High).",
+      "status": "passed",
+      "modelCalls": 4,
+      "inputTokens": 44770,
+      "freshInputTokens": 10,
+      "cacheReadTokens": 40178,
+      "cacheWriteTokens": 4582,
+      "outputTokens": 401,
+      "estimatedUsd": 0.0235206,
+      "durationMs": 10938
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 2,
+      "api": "agent.extract",
+      "label": "Read the visible product names in their display order, excluding categories and navigation.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4392,
+      "freshInputTokens": 3607,
+      "cacheReadTokens": 785,
+      "cacheWriteTokens": 0,
+      "outputTokens": 279,
+      "estimatedUsd": 0.010161,
+      "durationMs": 3883
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (High to Low). Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 4,
+      "inputTokens": 45425,
+      "freshInputTokens": 10,
+      "cacheReadTokens": 40691,
+      "cacheWriteTokens": 4724,
+      "outputTokens": 342,
+      "estimatedUsd": 0.0233882,
+      "durationMs": 8160
+    }
+  ],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}

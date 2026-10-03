@@ -1,0 +1,2418 @@
+{
+  "updatedOn": "2026-10-03",
+  "inventory": {
+    "scenarios": 68,
+    "act": 67,
+    "assert": 95,
+    "waitFor": 2,
+    "extract": 2,
+    "totalAiSteps": 166
+  },
+  "runs": {
+    "four-operations-live": {
+      "costFile": "evaluation/four-operations-live-cost.json",
+      "report": ".e2e/four-operations-live/report.json",
+      "summary": {
+        "discovered": 303,
+        "selected": 3,
+        "executed": 3,
+        "passed": 3,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 300
+      },
+      "durationSeconds": 27.902,
+      "totals": {
+        "steps": 16,
+        "modelCalls": 26,
+        "inputTokens": 231818,
+        "freshInputTokens": 33707,
+        "cacheReadTokens": 146886,
+        "cacheWriteTokens": 51225,
+        "outputTokens": 3823,
+        "estimatedUsd": 0.2630837
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 6,
+          "modelCalls": 16,
+          "inputTokens": 191032,
+          "freshInputTokens": 44,
+          "cacheReadTokens": 142753,
+          "cacheWriteTokens": 48235,
+          "outputTokens": 1992,
+          "estimatedUsd": 0.1691461,
+          "meanUsd": 0.028191016666666666,
+          "medianUsd": 0.0208948,
+          "p90Usd": 0.0513643
+        },
+        "agent.waitFor": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 7653,
+          "freshInputTokens": 6277,
+          "cacheReadTokens": 688,
+          "cacheWriteTokens": 688,
+          "outputTokens": 333,
+          "estimatedUsd": 0.0177416,
+          "meanUsd": 0.0088708,
+          "medianUsd": 0.0088708,
+          "p90Usd": 0.012378
+        },
+        "agent.assert": {
+          "steps": 6,
+          "modelCalls": 6,
+          "inputTokens": 23264,
+          "freshInputTokens": 19130,
+          "cacheReadTokens": 3445,
+          "cacheWriteTokens": 689,
+          "outputTokens": 1133,
+          "estimatedUsd": 0.0520015,
+          "meanUsd": 0.008666916666666667,
+          "medianUsd": 0.0091078,
+          "p90Usd": 0.0106758
+        },
+        "agent.extract": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 9869,
+          "freshInputTokens": 8256,
+          "cacheReadTokens": 0,
+          "cacheWriteTokens": 1613,
+          "outputTokens": 365,
+          "estimatedUsd": 0.0241945,
+          "meanUsd": 0.01209725,
+          "medianUsd": 0.01209725,
+          "p90Usd": 0.0126625
+        }
+      },
+      "actionReplay": {
+        "live": 6
+      }
+    },
+    "wait-delayed-setup": {
+      "costFile": "evaluation/wait-delayed-setup-cost.json",
+      "report": ".e2e/wait-delayed/report.json",
+      "summary": {
+        "discovered": 307,
+        "selected": 6,
+        "executed": 6,
+        "passed": 3,
+        "failed": 3,
+        "flaky": 0,
+        "skipped": 301
+      },
+      "durationSeconds": 50.719,
+      "totals": {
+        "steps": 15,
+        "modelCalls": 21,
+        "inputTokens": 82380,
+        "freshInputTokens": 67503,
+        "cacheReadTokens": 14877,
+        "cacheWriteTokens": 0,
+        "outputTokens": 3375,
+        "estimatedUsd": 0.17173139999999998
+      },
+      "byApi": {
+        "agent.waitFor": {
+          "steps": 3,
+          "modelCalls": 9,
+          "inputTokens": 35973,
+          "freshInputTokens": 29781,
+          "cacheReadTokens": 6192,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1481,
+          "estimatedUsd": 0.0756104,
+          "meanUsd": 0.025203466666666664,
+          "medianUsd": 0.0254588,
+          "p90Usd": 0.0255628
+        },
+        "agent.assert": {
+          "steps": 9,
+          "modelCalls": 9,
+          "inputTokens": 32984,
+          "freshInputTokens": 26783,
+          "cacheReadTokens": 6201,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1750,
+          "estimatedUsd": 0.07230619999999999,
+          "meanUsd": 0.008034022222222222,
+          "medianUsd": 0.0074618,
+          "p90Usd": 0.0092678
+        },
+        "agent.extract": {
+          "steps": 3,
+          "modelCalls": 3,
+          "inputTokens": 13423,
+          "freshInputTokens": 10939,
+          "cacheReadTokens": 2484,
+          "cacheWriteTokens": 0,
+          "outputTokens": 144,
+          "estimatedUsd": 0.0238148,
+          "meanUsd": 0.007938266666666667,
+          "medianUsd": 0.0080596,
+          "p90Usd": 0.0080636
+        }
+      },
+      "actionReplay": {}
+    },
+    "wait-delayed-final": {
+      "costFile": "evaluation/wait-delayed-final-cost.json",
+      "report": ".e2e/wait-delayed-final/report.json",
+      "summary": {
+        "discovered": 307,
+        "selected": 6,
+        "executed": 6,
+        "passed": 6,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 301
+      },
+      "durationSeconds": 60.704,
+      "totals": {
+        "steps": 21,
+        "modelCalls": 30,
+        "inputTokens": 104653,
+        "freshInputTokens": 83581,
+        "cacheReadTokens": 21072,
+        "cacheWriteTokens": 0,
+        "outputTokens": 4681,
+        "estimatedUsd": 0.2181864
+      },
+      "byApi": {
+        "agent.waitFor": {
+          "steps": 6,
+          "modelCalls": 15,
+          "inputTokens": 50178,
+          "freshInputTokens": 39858,
+          "cacheReadTokens": 10320,
+          "cacheWriteTokens": 0,
+          "outputTokens": 2235,
+          "estimatedUsd": 0.10413,
+          "meanUsd": 0.017355,
+          "medianUsd": 0.017315,
+          "p90Usd": 0.0256828
+        },
+        "agent.assert": {
+          "steps": 12,
+          "modelCalls": 12,
+          "inputTokens": 40875,
+          "freshInputTokens": 32607,
+          "cacheReadTokens": 8268,
+          "cacheWriteTokens": 0,
+          "outputTokens": 2302,
+          "estimatedUsd": 0.0898876,
+          "meanUsd": 0.007490633333333333,
+          "medianUsd": 0.0071468,
+          "p90Usd": 0.0093618
+        },
+        "agent.extract": {
+          "steps": 3,
+          "modelCalls": 3,
+          "inputTokens": 13600,
+          "freshInputTokens": 11116,
+          "cacheReadTokens": 2484,
+          "cacheWriteTokens": 0,
+          "outputTokens": 144,
+          "estimatedUsd": 0.0241688,
+          "meanUsd": 0.008056266666666667,
+          "medianUsd": 0.0080556,
+          "p90Usd": 0.0080636
+        }
+      },
+      "actionReplay": {}
+    },
+    "wait-never-ready": {
+      "costFile": "evaluation/wait-never-ready-cost.json",
+      "report": ".e2e/wait-never-ready/report.json",
+      "summary": {
+        "discovered": 305,
+        "selected": 4,
+        "executed": 4,
+        "passed": 4,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 301
+      },
+      "durationSeconds": 37.173,
+      "totals": {
+        "steps": 14,
+        "modelCalls": 16,
+        "inputTokens": 56092,
+        "freshInputTokens": 44796,
+        "cacheReadTokens": 11296,
+        "cacheWriteTokens": 0,
+        "outputTokens": 2325,
+        "estimatedUsd": 0.1151012
+      },
+      "byApi": {
+        "agent.waitFor": {
+          "steps": 4,
+          "modelCalls": 6,
+          "inputTokens": 19758,
+          "freshInputTokens": 15630,
+          "cacheReadTokens": 4128,
+          "cacheWriteTokens": 0,
+          "outputTokens": 833,
+          "estimatedUsd": 0.0404156,
+          "meanUsd": 0.0101039,
+          "medianUsd": 0.0100234,
+          "p90Usd": 0.0164212
+        },
+        "agent.assert": {
+          "steps": 8,
+          "modelCalls": 8,
+          "inputTokens": 27260,
+          "freshInputTokens": 21748,
+          "cacheReadTokens": 5512,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1396,
+          "estimatedUsd": 0.058558400000000004,
+          "meanUsd": 0.0073198000000000004,
+          "medianUsd": 0.0072728,
+          "p90Usd": 0.0093958
+        },
+        "agent.extract": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 9074,
+          "freshInputTokens": 7418,
+          "cacheReadTokens": 1656,
+          "cacheWriteTokens": 0,
+          "outputTokens": 96,
+          "estimatedUsd": 0.0161272,
+          "meanUsd": 0.0080636,
+          "medianUsd": 0.0080636,
+          "p90Usd": 0.0080776
+        }
+      },
+      "actionReplay": {}
+    },
+    "four-operations-repeat": {
+      "costFile": "evaluation/four-operations-repeat-cost.json",
+      "report": ".e2e/four-operations-repeat/report.json",
+      "summary": {
+        "discovered": 309,
+        "selected": 9,
+        "executed": 9,
+        "passed": 9,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 300
+      },
+      "durationSeconds": 71.008,
+      "totals": {
+        "steps": 48,
+        "modelCalls": 78,
+        "inputTokens": 698634,
+        "freshInputTokens": 102193,
+        "cacheReadTokens": 479328,
+        "cacheWriteTokens": 117113,
+        "outputTokens": 11408,
+        "estimatedUsd": 0.7071141000000001
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 18,
+          "modelCalls": 48,
+          "inputTokens": 575204,
+          "freshInputTokens": 132,
+          "cacheReadTokens": 458744,
+          "cacheWriteTokens": 116328,
+          "outputTokens": 5841,
+          "estimatedUsd": 0.4412428000000001,
+          "meanUsd": 0.024513488888888893,
+          "medianUsd": 0.0209217,
+          "p90Usd": 0.0408704
+        },
+        "agent.waitFor": {
+          "steps": 6,
+          "modelCalls": 6,
+          "inputTokens": 22973,
+          "freshInputTokens": 18845,
+          "cacheReadTokens": 4128,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1055,
+          "estimatedUsd": 0.0490656,
+          "meanUsd": 0.0081776,
+          "medianUsd": 0.008162599999999999,
+          "p90Usd": 0.0109836
+        },
+        "agent.assert": {
+          "steps": 18,
+          "modelCalls": 18,
+          "inputTokens": 70456,
+          "freshInputTokens": 58054,
+          "cacheReadTokens": 12402,
+          "cacheWriteTokens": 0,
+          "outputTokens": 3617,
+          "estimatedUsd": 0.15475840000000002,
+          "meanUsd": 0.00859768888888889,
+          "medianUsd": 0.008964799999999998,
+          "p90Usd": 0.0107338
+        },
+        "agent.extract": {
+          "steps": 6,
+          "modelCalls": 6,
+          "inputTokens": 30001,
+          "freshInputTokens": 25162,
+          "cacheReadTokens": 4054,
+          "cacheWriteTokens": 785,
+          "outputTokens": 895,
+          "estimatedUsd": 0.0620473,
+          "meanUsd": 0.010341216666666667,
+          "medianUsd": 0.0100583,
+          "p90Usd": 0.0118905
+        }
+      },
+      "actionReplay": {
+        "live": 18
+      }
+    },
+    "four-operations-judgments": {
+      "costFile": "evaluation/four-operations-judgments-cost.json",
+      "report": ".e2e/four-operations-judgments/report.json",
+      "summary": {
+        "discovered": 303,
+        "selected": 68,
+        "executed": 68,
+        "passed": 68,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 235
+      },
+      "durationSeconds": 103.64,
+      "totals": {
+        "steps": 99,
+        "modelCalls": 101,
+        "inputTokens": 349513,
+        "freshInputTokens": 279693,
+        "cacheReadTokens": 69820,
+        "cacheWriteTokens": 0,
+        "outputTokens": 16417,
+        "estimatedUsd": 0.7375199999999998
+      },
+      "byApi": {
+        "agent.assert": {
+          "steps": 95,
+          "modelCalls": 95,
+          "inputTokens": 326022,
+          "freshInputTokens": 260567,
+          "cacheReadTokens": 65455,
+          "cacheWriteTokens": 0,
+          "outputTokens": 15621,
+          "estimatedUsd": 0.690435,
+          "meanUsd": 0.0072677368421052635,
+          "medianUsd": 0.006941800000000001,
+          "p90Usd": 0.0122098
+        },
+        "agent.waitFor": {
+          "steps": 2,
+          "modelCalls": 4,
+          "inputTokens": 14003,
+          "freshInputTokens": 11251,
+          "cacheReadTokens": 2752,
+          "cacheWriteTokens": 0,
+          "outputTokens": 620,
+          "estimatedUsd": 0.029252400000000005,
+          "meanUsd": 0.014626200000000002,
+          "medianUsd": 0.014626200000000002,
+          "p90Usd": 0.019725200000000002
+        },
+        "agent.extract": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 9488,
+          "freshInputTokens": 7875,
+          "cacheReadTokens": 1613,
+          "cacheWriteTokens": 0,
+          "outputTokens": 176,
+          "estimatedUsd": 0.0178326,
+          "meanUsd": 0.0089163,
+          "medianUsd": 0.0089163,
+          "p90Usd": 0.008981
+        }
+      },
+      "actionReplay": {}
+    },
+    "four-operations-ui": {
+      "costFile": "evaluation/four-operations-ui-cost.json",
+      "report": ".e2e/four-operations-ui/report.json",
+      "summary": {
+        "discovered": 303,
+        "selected": 68,
+        "executed": 68,
+        "passed": 68,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 235
+      },
+      "durationSeconds": 199.586,
+      "totals": {
+        "steps": 166,
+        "modelCalls": 249,
+        "inputTokens": 2021539,
+        "freshInputTokens": 276847,
+        "cacheReadTokens": 1412089,
+        "cacheWriteTokens": 332603,
+        "outputTokens": 32444,
+        "estimatedUsd": 1.9920593000000006
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 67,
+          "modelCalls": 150,
+          "inputTokens": 1676682,
+          "freshInputTokens": 434,
+          "cacheReadTokens": 1343645,
+          "cacheWriteTokens": 332603,
+          "outputTokens": 16228,
+          "estimatedUsd": 1.2633845000000004,
+          "meanUsd": 0.01885648507462687,
+          "medianUsd": 0.0178773,
+          "p90Usd": 0.0291112
+        },
+        "agent.assert": {
+          "steps": 95,
+          "modelCalls": 95,
+          "inputTokens": 329033,
+          "freshInputTokens": 263578,
+          "cacheReadTokens": 65455,
+          "cacheWriteTokens": 0,
+          "outputTokens": 15554,
+          "estimatedUsd": 0.6957869999999996,
+          "meanUsd": 0.007324073684210522,
+          "medianUsd": 0.0070178,
+          "p90Usd": 0.0120138
+        },
+        "agent.waitFor": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 6787,
+          "freshInputTokens": 5411,
+          "cacheReadTokens": 1376,
+          "cacheWriteTokens": 0,
+          "outputTokens": 323,
+          "estimatedUsd": 0.014327200000000002,
+          "meanUsd": 0.007163600000000001,
+          "medianUsd": 0.007163600000000001,
+          "p90Usd": 0.0090556
+        },
+        "agent.extract": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 9037,
+          "freshInputTokens": 7424,
+          "cacheReadTokens": 1613,
+          "cacheWriteTokens": 0,
+          "outputTokens": 339,
+          "estimatedUsd": 0.0185606,
+          "meanUsd": 0.0092803,
+          "medianUsd": 0.0092803,
+          "p90Usd": 0.010643
+        }
+      },
+      "actionReplay": {
+        "live": 67
+      }
+    },
+    "four-operations-replay": {
+      "costFile": "evaluation/four-operations-replay-cost.json",
+      "report": ".e2e/four-operations-replay/report.json",
+      "summary": {
+        "discovered": 303,
+        "selected": 68,
+        "executed": 68,
+        "passed": 68,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 235
+      },
+      "durationSeconds": 181.979,
+      "totals": {
+        "steps": 166,
+        "modelCalls": 126,
+        "inputTokens": 680261,
+        "freshInputTokens": 281033,
+        "cacheReadTokens": 317488,
+        "cacheWriteTokens": 81740,
+        "outputTokens": 20468,
+        "estimatedUsd": 1.0345936000000002
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 67,
+          "modelCalls": 27,
+          "inputTokens": 330870,
+          "freshInputTokens": 86,
+          "cacheReadTokens": 249044,
+          "cacheWriteTokens": 81740,
+          "outputTokens": 3916,
+          "estimatedUsd": 0.2934908,
+          "meanUsd": 0.004380459701492537,
+          "medianUsd": 0,
+          "p90Usd": 0.018068900000000002
+        },
+        "agent.assert": {
+          "steps": 95,
+          "modelCalls": 95,
+          "inputTokens": 332329,
+          "freshInputTokens": 266874,
+          "cacheReadTokens": 65455,
+          "cacheWriteTokens": 0,
+          "outputTokens": 15989,
+          "estimatedUsd": 0.7067289999999998,
+          "meanUsd": 0.007439252631578946,
+          "medianUsd": 0.0070238,
+          "p90Usd": 0.012069799999999999
+        },
+        "agent.waitFor": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 7425,
+          "freshInputTokens": 6049,
+          "cacheReadTokens": 1376,
+          "cacheWriteTokens": 0,
+          "outputTokens": 289,
+          "estimatedUsd": 0.015263200000000001,
+          "meanUsd": 0.0076316000000000005,
+          "medianUsd": 0.0076316000000000005,
+          "p90Usd": 0.0101296
+        },
+        "agent.extract": {
+          "steps": 2,
+          "modelCalls": 2,
+          "inputTokens": 9637,
+          "freshInputTokens": 8024,
+          "cacheReadTokens": 1613,
+          "cacheWriteTokens": 0,
+          "outputTokens": 274,
+          "estimatedUsd": 0.0191106,
+          "meanUsd": 0.0095553,
+          "medianUsd": 0.0095553,
+          "p90Usd": 0.009929
+        }
+      },
+      "actionReplay": {
+        "self-finalized": 51,
+        "agent-concluded": 8,
+        "missed": 8
+      }
+    }
+  },
+  "waitChallenges": {
+    "delayed": [
+      {
+        "timestamp": "2026-10-03T11:04:57.667Z",
+        "kind": "wait-challenge",
+        "mode": "delayed",
+        "statement": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+        "target": {
+          "selector": "[data-testid=\"inventory-inspector\"]"
+        },
+        "verdict": "completed",
+        "code": null,
+        "durationMs": 9015,
+        "hidden": false,
+        "restored": true
+      },
+      {
+        "timestamp": "2026-10-03T11:05:26.648Z",
+        "kind": "wait-challenge",
+        "mode": "delayed",
+        "statement": "The order details are visible with PENDING status, ordered items and shipping information.",
+        "target": {
+          "selector": "[data-testid=\"order-details\"]"
+        },
+        "verdict": "completed",
+        "code": null,
+        "durationMs": 8987,
+        "hidden": false,
+        "restored": true
+      },
+      {
+        "timestamp": "2026-10-03T11:04:42.616Z",
+        "kind": "wait-challenge",
+        "mode": "delayed",
+        "statement": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+        "target": {
+          "selector": "[data-testid=\"inventory-inspector\"]"
+        },
+        "verdict": "completed",
+        "code": null,
+        "durationMs": 9442,
+        "hidden": false,
+        "restored": true
+      },
+      {
+        "timestamp": "2026-10-03T11:04:48.528Z",
+        "kind": "wait-challenge",
+        "mode": "delayed",
+        "statement": "The order details are visible with PENDING status, ordered items and shipping information.",
+        "target": {
+          "selector": "[data-testid=\"order-details\"]"
+        },
+        "verdict": "completed",
+        "code": null,
+        "durationMs": 8787,
+        "hidden": false,
+        "restored": true
+      },
+      {
+        "timestamp": "2026-10-03T11:05:13.430Z",
+        "kind": "wait-challenge",
+        "mode": "delayed",
+        "statement": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+        "target": {
+          "selector": "[data-testid=\"inventory-inspector\"]"
+        },
+        "verdict": "completed",
+        "code": null,
+        "durationMs": 9127,
+        "hidden": false,
+        "restored": true
+      },
+      {
+        "timestamp": "2026-10-03T11:05:07.187Z",
+        "kind": "wait-challenge",
+        "mode": "delayed",
+        "statement": "The order details are visible with PENDING status, ordered items and shipping information.",
+        "target": {
+          "selector": "[data-testid=\"order-details\"]"
+        },
+        "verdict": "completed",
+        "code": null,
+        "durationMs": 9032,
+        "hidden": false,
+        "restored": true
+      }
+    ],
+    "neverReady": [
+      {
+        "timestamp": "2026-10-03T11:06:10.398Z",
+        "kind": "wait-challenge",
+        "mode": "never-ready",
+        "statement": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+        "target": {
+          "selector": "[data-testid=\"inventory-inspector\"]"
+        },
+        "verdict": "timed-out",
+        "code": "STEP_TIMEOUT",
+        "durationMs": 8008,
+        "hidden": true,
+        "restored": false
+      },
+      {
+        "timestamp": "2026-10-03T11:06:19.110Z",
+        "kind": "wait-challenge",
+        "mode": "never-ready",
+        "statement": "The order details are visible with PENDING status, ordered items and shipping information.",
+        "target": {
+          "selector": "[data-testid=\"order-details\"]"
+        },
+        "verdict": "timed-out",
+        "code": "STEP_TIMEOUT",
+        "durationMs": 8007,
+        "hidden": true,
+        "restored": false
+      },
+      {
+        "timestamp": "2026-10-03T11:06:01.323Z",
+        "kind": "wait-challenge",
+        "mode": "never-ready",
+        "statement": "The order details are visible with PENDING status, ordered items and shipping information.",
+        "target": {
+          "selector": "[data-testid=\"order-details\"]"
+        },
+        "verdict": "timed-out",
+        "code": "STEP_TIMEOUT",
+        "durationMs": 8012,
+        "hidden": true,
+        "restored": false
+      },
+      {
+        "timestamp": "2026-10-03T11:05:56.232Z",
+        "kind": "wait-challenge",
+        "mode": "never-ready",
+        "statement": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+        "target": {
+          "selector": "[data-testid=\"inventory-inspector\"]"
+        },
+        "verdict": "timed-out",
+        "code": "STEP_TIMEOUT",
+        "durationMs": 8009,
+        "hidden": true,
+        "restored": false
+      }
+    ]
+  },
+  "newEstimatedUsd": 5.239389700000001,
+  "priorExpansionEstimatedUsd": 10.4838016,
+  "combinedExpansionEstimatedUsd": 15.7231913,
+  "reusedEvidence": {
+    "deterministic": {
+      "costFile": "scale-deterministic-final-cost.json",
+      "summary": {
+        "discovered": 303,
+        "selected": 68,
+        "executed": 68,
+        "passed": 68,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 235
+      },
+      "durationSeconds": 21.029,
+      "totals": {
+        "steps": 0,
+        "modelCalls": 0,
+        "inputTokens": 0,
+        "freshInputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0,
+        "outputTokens": 0,
+        "estimatedUsd": 0
+      },
+      "byApi": {},
+      "byApiDistribution": {},
+      "byFile": {},
+      "byCategory": {},
+      "scenarios": [
+        {
+          "file": "tests/ui/add-product.e2e.ts",
+          "titlePath": [
+            "creates a product and exposes its saved values in the admin catalog"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/add-product.e2e.ts",
+          "titlePath": [
+            "denies clients access to product creation"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-dashboard.e2e.ts",
+          "titlePath": [
+            "identifies a low-stock product and opens the matching editor"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-dashboard.e2e.ts",
+          "titlePath": [
+            "denies clients access to the admin dashboard"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-inventory.e2e.ts",
+          "titlePath": [
+            "selects a product and records a stock adjustment with movement history"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-inventory.e2e.ts",
+          "titlePath": [
+            "denies clients access to inventory administration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-orders.e2e.ts",
+          "titlePath": [
+            "filters orders, opens the selected order and saves its new status"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-orders.e2e.ts",
+          "titlePath": [
+            "denies clients access to all-customer order administration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-products.e2e.ts",
+          "titlePath": [
+            "lists a disposable product and deletes it only after confirmation"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-products.e2e.ts",
+          "titlePath": [
+            "denies clients access to catalog administration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens products"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens Send Email"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens QR Code"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens LLM"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens Traffic Monitor"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens the cart"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens the user profile"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "returns home through the brand"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "logs out and prevents reopening home"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client permissions",
+            "identifies the signed-in user"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client permissions",
+            "does not expose the Admin link"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — admin permissions",
+            "shows the Admin link and opens the dashboard"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/cart.e2e.ts",
+          "titlePath": [
+            "updates a line, recomputes multi-product totals and removes items to empty"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/cart.e2e.ts",
+          "titlePath": [
+            "clears the cart only after confirmation"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/cart.e2e.ts",
+          "titlePath": [
+            "continues to checkout with the saved cart"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "places an order with the shipping address and empties the cart"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "requires the shipping address without creating an order"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "returns an empty-cart checkout visit to the cart"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "preserves the cart and address when stock becomes unavailable"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/edit-product.e2e.ts",
+          "titlePath": [
+            "edits a disposable product and persists all catalog fields"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/edit-product.e2e.ts",
+          "titlePath": [
+            "denies clients access to editing an existing product"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/edit-user.e2e.ts",
+          "titlePath": [
+            "saves edits to a disposable user and returns to the directory"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/edit-user.e2e.ts",
+          "titlePath": [
+            "cancels a populated edit without saving it"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/edit-user.e2e.ts",
+          "titlePath": [
+            "denies a client direct access to user editing"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "shows the API-authenticated user after a reload"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the product catalog"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens profile and orders"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the users directory"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the AI assistant"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens Traffic Monitor"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the QR code generator"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens Send Email"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "redirects a guest from home to sign in"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "opens registration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "opens login from registration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "returns to login through the brand"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "signs in with valid credentials"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "requires credentials before signing in"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "shows a useful error for invalid credentials"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "opens registration from the form"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "opens password recovery"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/order-details.e2e.ts",
+          "titlePath": [
+            "shows the own order and cancels it only after confirmation"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/product-details.e2e.ts",
+          "titlePath": [
+            "adds, updates and removes a product from its detail screen"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/product-details.e2e.ts",
+          "titlePath": [
+            "prevents adding an out-of-stock product"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/product-details.e2e.ts",
+          "titlePath": [
+            "offers catalog recovery when a product is no longer available"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "combines category and case-insensitive search"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "sorts a category by price in both directions"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "recovers from no search results within the selected category"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "opens the selected product details"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "keeps cart items, header count and toasts consistent across add, update and remove"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/profile.e2e.ts",
+          "titlePath": [
+            "saves personal information and both assistant prompts across reload"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/profile.e2e.ts",
+          "titlePath": [
+            "filters order history and opens the matching order"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "creates an account that can sign in"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "requires account details before registration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "rejects an existing username"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "opens sign in for an existing account"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/users.e2e.ts",
+          "titlePath": [
+            "shows the directory without admin edit or delete controls for clients"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/users.e2e.ts",
+          "titlePath": [
+            "deletes a disposable user from the directory"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        }
+      ],
+      "actionCache": {},
+      "activeScenarios": 0
+    },
+    "actions": {
+      "costFile": "scale-actions-live-cost.json",
+      "summary": {
+        "discovered": 303,
+        "selected": 68,
+        "executed": 68,
+        "passed": 68,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 235
+      },
+      "durationSeconds": 117.689,
+      "totals": {
+        "steps": 67,
+        "modelCalls": 149,
+        "inputTokens": 1650285,
+        "freshInputTokens": 432,
+        "cacheReadTokens": 1338941,
+        "cacheWriteTokens": 310912,
+        "outputTokens": 16431,
+        "estimatedUsd": 1.2102421999999997
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 67,
+          "modelCalls": 149,
+          "inputTokens": 1650285,
+          "freshInputTokens": 432,
+          "cacheReadTokens": 1338941,
+          "cacheWriteTokens": 310912,
+          "outputTokens": 16431,
+          "estimatedUsd": 1.2102421999999997
+        }
+      },
+      "byApiDistribution": {
+        "agent.act": {
+          "count": 67,
+          "meanUsd": 0.018063316417910445,
+          "minUsd": 0.005375,
+          "medianUsd": 0.0172771,
+          "p90Usd": 0.0266906,
+          "maxUsd": 0.0352522,
+          "medianSeconds": 4.314,
+          "p90Seconds": 6.28
+        }
+      },
+      "byFile": {
+        "tests/ui/add-product.e2e.ts": {
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0111866,
+          "totalStepSeconds": 4.209
+        },
+        "tests/ui/admin-dashboard.e2e.ts": {
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0179881,
+          "totalStepSeconds": 4.808
+        },
+        "tests/ui/admin-inventory.e2e.ts": {
+          "steps": 2,
+          "calls": 6,
+          "estimatedUsd": 0.059047699999999995,
+          "totalStepSeconds": 12.996
+        },
+        "tests/ui/admin-orders.e2e.ts": {
+          "steps": 1,
+          "calls": 3,
+          "estimatedUsd": 0.0146375,
+          "totalStepSeconds": 6.28
+        },
+        "tests/ui/admin-products.e2e.ts": {
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.026594299999999998,
+          "totalStepSeconds": 5.605
+        },
+        "tests/ui/authenticated-header.e2e.ts": {
+          "steps": 10,
+          "calls": 20,
+          "estimatedUsd": 0.18131840000000005,
+          "totalStepSeconds": 40.759
+        },
+        "tests/ui/cart.e2e.ts": {
+          "steps": 5,
+          "calls": 11,
+          "estimatedUsd": 0.09249299999999999,
+          "totalStepSeconds": 23.443000000000005
+        },
+        "tests/ui/checkout.e2e.ts": {
+          "steps": 5,
+          "calls": 10,
+          "estimatedUsd": 0.07854219999999999,
+          "totalStepSeconds": 22.828000000000003
+        },
+        "tests/ui/edit-product.e2e.ts": {
+          "steps": 1,
+          "calls": 3,
+          "estimatedUsd": 0.0185443,
+          "totalStepSeconds": 7.393
+        },
+        "tests/ui/edit-user.e2e.ts": {
+          "steps": 2,
+          "calls": 4,
+          "estimatedUsd": 0.040450700000000006,
+          "totalStepSeconds": 10.038
+        },
+        "tests/ui/home.e2e.ts": {
+          "steps": 7,
+          "calls": 14,
+          "estimatedUsd": 0.1212207,
+          "totalStepSeconds": 29.772000000000002
+        },
+        "tests/ui/logged-out-header.e2e.ts": {
+          "steps": 3,
+          "calls": 6,
+          "estimatedUsd": 0.037544,
+          "totalStepSeconds": 12.687999999999999
+        },
+        "tests/ui/login.e2e.ts": {
+          "steps": 4,
+          "calls": 9,
+          "estimatedUsd": 0.0374697,
+          "totalStepSeconds": 16.756
+        },
+        "tests/ui/order-details.e2e.ts": {
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0129751,
+          "totalStepSeconds": 4.686
+        },
+        "tests/ui/product-details.e2e.ts": {
+          "steps": 4,
+          "calls": 10,
+          "estimatedUsd": 0.07104759999999999,
+          "totalStepSeconds": 19.021
+        },
+        "tests/ui/products.e2e.ts": {
+          "steps": 9,
+          "calls": 23,
+          "estimatedUsd": 0.244935,
+          "totalStepSeconds": 49.762000000000015
+        },
+        "tests/ui/profile.e2e.ts": {
+          "steps": 5,
+          "calls": 11,
+          "estimatedUsd": 0.0865589,
+          "totalStepSeconds": 23.37
+        },
+        "tests/ui/register.e2e.ts": {
+          "steps": 4,
+          "calls": 9,
+          "estimatedUsd": 0.040283400000000004,
+          "totalStepSeconds": 17.075
+        },
+        "tests/ui/users.e2e.ts": {
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.017405,
+          "totalStepSeconds": 5.692
+        }
+      },
+      "byCategory": {
+        "administration": {
+          "steps": 10,
+          "calls": 24,
+          "estimatedUsd": 0.2058542,
+          "totalStepSeconds": 57.020999999999994
+        },
+        "navigation-and-authentication": {
+          "steps": 28,
+          "calls": 58,
+          "estimatedUsd": 0.4178362000000001,
+          "totalStepSeconds": 117.05000000000001
+        },
+        "commerce": {
+          "steps": 24,
+          "calls": 56,
+          "estimatedUsd": 0.4999929000000001,
+          "totalStepSeconds": 119.74
+        },
+        "profile": {
+          "steps": 5,
+          "calls": 11,
+          "estimatedUsd": 0.0865589,
+          "totalStepSeconds": 23.37
+        }
+      },
+      "scenarios": [
+        {
+          "file": "tests/ui/add-product.e2e.ts",
+          "titlePath": [
+            "creates a product and exposes its saved values in the admin catalog"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0111866,
+          "totalStepSeconds": 4.209
+        },
+        {
+          "file": "tests/ui/add-product.e2e.ts",
+          "titlePath": [
+            "denies clients access to product creation"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-dashboard.e2e.ts",
+          "titlePath": [
+            "identifies a low-stock product and opens the matching editor"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0179881,
+          "totalStepSeconds": 4.808
+        },
+        {
+          "file": "tests/ui/admin-dashboard.e2e.ts",
+          "titlePath": [
+            "denies clients access to the admin dashboard"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-inventory.e2e.ts",
+          "titlePath": [
+            "selects a product and records a stock adjustment with movement history"
+          ],
+          "steps": 2,
+          "calls": 6,
+          "estimatedUsd": 0.059047699999999995,
+          "totalStepSeconds": 12.996
+        },
+        {
+          "file": "tests/ui/admin-inventory.e2e.ts",
+          "titlePath": [
+            "denies clients access to inventory administration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-orders.e2e.ts",
+          "titlePath": [
+            "filters orders, opens the selected order and saves its new status"
+          ],
+          "steps": 1,
+          "calls": 3,
+          "estimatedUsd": 0.0146375,
+          "totalStepSeconds": 6.28
+        },
+        {
+          "file": "tests/ui/admin-orders.e2e.ts",
+          "titlePath": [
+            "denies clients access to all-customer order administration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/admin-products.e2e.ts",
+          "titlePath": [
+            "lists a disposable product and deletes it only after confirmation"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.026594299999999998,
+          "totalStepSeconds": 5.605
+        },
+        {
+          "file": "tests/ui/admin-products.e2e.ts",
+          "titlePath": [
+            "denies clients access to catalog administration"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens products"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0266906,
+          "totalStepSeconds": 3.739
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens Send Email"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0148535,
+          "totalStepSeconds": 3.916
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens QR Code"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0147902,
+          "totalStepSeconds": 3.608
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens LLM"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0157691,
+          "totalStepSeconds": 3.738
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens Traffic Monitor"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0180093,
+          "totalStepSeconds": 3.577
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens the cart"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.014342,
+          "totalStepSeconds": 4.43
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "opens the user profile"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.018761200000000002,
+          "totalStepSeconds": 4.314
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "returns home through the brand"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0241936,
+          "totalStepSeconds": 5.025
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client",
+            "logs out and prevents reopening home"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0156564,
+          "totalStepSeconds": 4.341
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client permissions",
+            "identifies the signed-in user"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — client permissions",
+            "does not expose the Admin link"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/authenticated-header.e2e.ts",
+          "titlePath": [
+            "Authenticated header — admin permissions",
+            "shows the Admin link and opens the dashboard"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0182525,
+          "totalStepSeconds": 4.071
+        },
+        {
+          "file": "tests/ui/cart.e2e.ts",
+          "titlePath": [
+            "updates a line, recomputes multi-product totals and removes items to empty"
+          ],
+          "steps": 3,
+          "calls": 7,
+          "estimatedUsd": 0.0595147,
+          "totalStepSeconds": 14.996000000000002
+        },
+        {
+          "file": "tests/ui/cart.e2e.ts",
+          "titlePath": [
+            "clears the cart only after confirmation"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0160504,
+          "totalStepSeconds": 4.923
+        },
+        {
+          "file": "tests/ui/cart.e2e.ts",
+          "titlePath": [
+            "continues to checkout with the saved cart"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.016927900000000003,
+          "totalStepSeconds": 3.524
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "places an order with the shipping address and empties the cart"
+          ],
+          "steps": 2,
+          "calls": 4,
+          "estimatedUsd": 0.034855399999999995,
+          "totalStepSeconds": 9.736
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "requires the shipping address without creating an order"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0133084,
+          "totalStepSeconds": 4.273
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "returns an empty-cart checkout visit to the cart"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/checkout.e2e.ts",
+          "titlePath": [
+            "preserves the cart and address when stock becomes unavailable"
+          ],
+          "steps": 2,
+          "calls": 4,
+          "estimatedUsd": 0.0303784,
+          "totalStepSeconds": 8.819
+        },
+        {
+          "file": "tests/ui/edit-product.e2e.ts",
+          "titlePath": [
+            "edits a disposable product and persists all catalog fields"
+          ],
+          "steps": 1,
+          "calls": 3,
+          "estimatedUsd": 0.0185443,
+          "totalStepSeconds": 7.393
+        },
+        {
+          "file": "tests/ui/edit-product.e2e.ts",
+          "titlePath": [
+            "denies clients access to editing an existing product"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/edit-user.e2e.ts",
+          "titlePath": [
+            "saves edits to a disposable user and returns to the directory"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0225068,
+          "totalStepSeconds": 5.407
+        },
+        {
+          "file": "tests/ui/edit-user.e2e.ts",
+          "titlePath": [
+            "cancels a populated edit without saving it"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.017943900000000002,
+          "totalStepSeconds": 4.631
+        },
+        {
+          "file": "tests/ui/edit-user.e2e.ts",
+          "titlePath": [
+            "denies a client direct access to user editing"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "shows the API-authenticated user after a reload"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the product catalog"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0253123,
+          "totalStepSeconds": 3.588
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens profile and orders"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.018173400000000003,
+          "totalStepSeconds": 3.803
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the users directory"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0162173,
+          "totalStepSeconds": 3.941
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the AI assistant"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0161176,
+          "totalStepSeconds": 3.89
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens Traffic Monitor"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.015336899999999999,
+          "totalStepSeconds": 3.63
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens the QR code generator"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0152065,
+          "totalStepSeconds": 7.367
+        },
+        {
+          "file": "tests/ui/home.e2e.ts",
+          "titlePath": [
+            "Home screen",
+            "opens Send Email"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0148567,
+          "totalStepSeconds": 3.553
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "redirects a guest from home to sign in"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "opens registration"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0123426,
+          "totalStepSeconds": 4.186
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "opens login from registration"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.012313,
+          "totalStepSeconds": 3.782
+        },
+        {
+          "file": "tests/ui/logged-out-header.e2e.ts",
+          "titlePath": [
+            "Logged-out header",
+            "returns to login through the brand"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0128884,
+          "totalStepSeconds": 4.72
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "signs in with valid credentials"
+          ],
+          "steps": 1,
+          "calls": 3,
+          "estimatedUsd": 0.017281,
+          "totalStepSeconds": 5.367
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "requires credentials before signing in"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0092309,
+          "totalStepSeconds": 3.991
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "shows a useful error for invalid credentials"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "opens registration from the form"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.005375,
+          "totalStepSeconds": 3.869
+        },
+        {
+          "file": "tests/ui/login.e2e.ts",
+          "titlePath": [
+            "Login screen",
+            "opens password recovery"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.005582800000000001,
+          "totalStepSeconds": 3.529
+        },
+        {
+          "file": "tests/ui/order-details.e2e.ts",
+          "titlePath": [
+            "shows the own order and cancels it only after confirmation"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0129751,
+          "totalStepSeconds": 4.686
+        },
+        {
+          "file": "tests/ui/product-details.e2e.ts",
+          "titlePath": [
+            "adds, updates and removes a product from its detail screen"
+          ],
+          "steps": 3,
+          "calls": 8,
+          "estimatedUsd": 0.04684289999999999,
+          "totalStepSeconds": 14.998
+        },
+        {
+          "file": "tests/ui/product-details.e2e.ts",
+          "titlePath": [
+            "prevents adding an out-of-stock product"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/product-details.e2e.ts",
+          "titlePath": [
+            "offers catalog recovery when a product is no longer available"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0242047,
+          "totalStepSeconds": 4.023
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "combines category and case-insensitive search"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.017403599999999998,
+          "totalStepSeconds": 4.137
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "sorts a category by price in both directions"
+          ],
+          "steps": 2,
+          "calls": 7,
+          "estimatedUsd": 0.0453513,
+          "totalStepSeconds": 14.369
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "recovers from no search results within the selected category"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0212445,
+          "totalStepSeconds": 3.49
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "opens the selected product details"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0279043,
+          "totalStepSeconds": 4.75
+        },
+        {
+          "file": "tests/ui/products.e2e.ts",
+          "titlePath": [
+            "Products screen",
+            "keeps cart items, header count and toasts consistent across add, update and remove"
+          ],
+          "steps": 4,
+          "calls": 10,
+          "estimatedUsd": 0.1330313,
+          "totalStepSeconds": 23.016000000000002
+        },
+        {
+          "file": "tests/ui/profile.e2e.ts",
+          "titlePath": [
+            "saves personal information and both assistant prompts across reload"
+          ],
+          "steps": 2,
+          "calls": 5,
+          "estimatedUsd": 0.040121699999999996,
+          "totalStepSeconds": 12.081
+        },
+        {
+          "file": "tests/ui/profile.e2e.ts",
+          "titlePath": [
+            "filters order history and opens the matching order"
+          ],
+          "steps": 3,
+          "calls": 6,
+          "estimatedUsd": 0.0464372,
+          "totalStepSeconds": 11.289
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "creates an account that can sign in"
+          ],
+          "steps": 1,
+          "calls": 3,
+          "estimatedUsd": 0.015061900000000001,
+          "totalStepSeconds": 5.063
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "requires account details before registration"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0103905,
+          "totalStepSeconds": 4.558
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "rejects an existing username"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0094086,
+          "totalStepSeconds": 3.98
+        },
+        {
+          "file": "tests/ui/register.e2e.ts",
+          "titlePath": [
+            "Registration screen",
+            "opens sign in for an existing account"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.0054224,
+          "totalStepSeconds": 3.474
+        },
+        {
+          "file": "tests/ui/users.e2e.ts",
+          "titlePath": [
+            "shows the directory without admin edit or delete controls for clients"
+          ],
+          "steps": 0,
+          "calls": 0,
+          "estimatedUsd": 0,
+          "totalStepSeconds": 0
+        },
+        {
+          "file": "tests/ui/users.e2e.ts",
+          "titlePath": [
+            "deletes a disposable user from the directory"
+          ],
+          "steps": 1,
+          "calls": 2,
+          "estimatedUsd": 0.017405,
+          "totalStepSeconds": 5.692
+        }
+      ],
+      "actionCache": {
+        "off": 67
+      },
+      "activeScenarios": 53
+    },
+    "reason": "The additions are skipped when AI judgments are disabled; those profiles and their exact checks are unchanged. The earlier assertions-only and hybrid results are superseded by these new measurements."
+  },
+  "limitations": "Small controlled sample, not a general flake rate. Hidden DOM panels simulate delayed/absent evidence; no production bug was discovered. Expected STEP_TIMEOUT failures are caught only in the negative challenge and the original exact checks run after restoration. USD is a provider-token estimate at the rates in each cost file, not an invoice. Four workers for full suites, three for focused live repeats, two for timing challenges. All new runs, including the setup failure, are included in the new cost total."
+}

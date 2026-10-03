@@ -1,0 +1,8 @@
+{
+  "basis": "Elapsed local wall time from creation of the new project package.json to the first complete 303-test passing report. Reconstructed from filesystem birth time and runner timestamp, not a stopwatch measurement of all task work.",
+  "projectCreatedAt": "2026-10-02T08:12:19.103943+00:00",
+  "firstCompletePassingRunFinishedAt": "2026-10-02T08:28:19.397000+00:00",
+  "elapsedSeconds": 960.293057,
+  "passed": 303,
+  "excluded": "Earlier tool exploration, subsequent AI expansions, repeated fault challenges, cost analysis and article writing."
+}

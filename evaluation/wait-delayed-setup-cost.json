@@ -1,0 +1,368 @@
+{
+  "report": ".e2e/wait-delayed/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 307,
+    "selected": 6,
+    "executed": 6,
+    "passed": 3,
+    "failed": 3,
+    "flaky": 0,
+    "skipped": 301
+  },
+  "totals": {
+    "steps": 15,
+    "modelCalls": 21,
+    "inputTokens": 82380,
+    "freshInputTokens": 67503,
+    "cacheReadTokens": 14877,
+    "cacheWriteTokens": 0,
+    "outputTokens": 3375,
+    "estimatedUsd": 0.17173139999999998
+  },
+  "byApi": {
+    "agent.waitFor": {
+      "steps": 3,
+      "modelCalls": 9,
+      "inputTokens": 35973,
+      "freshInputTokens": 29781,
+      "cacheReadTokens": 6192,
+      "cacheWriteTokens": 0,
+      "outputTokens": 1481,
+      "estimatedUsd": 0.0756104
+    },
+    "agent.assert": {
+      "steps": 9,
+      "modelCalls": 9,
+      "inputTokens": 32984,
+      "freshInputTokens": 26783,
+      "cacheReadTokens": 6201,
+      "cacheWriteTokens": 0,
+      "outputTokens": 1750,
+      "estimatedUsd": 0.07230619999999999
+    },
+    "agent.extract": {
+      "steps": 3,
+      "modelCalls": 3,
+      "inputTokens": 13423,
+      "freshInputTokens": 10939,
+      "cacheReadTokens": 2484,
+      "cacheWriteTokens": 0,
+      "outputTokens": 144,
+      "estimatedUsd": 0.0238148
+    }
+  },
+  "steps": [
+    {
+      "stepId": "01a1016b-8546-7bab-bfd9-561f8d81be0c:11",
+      "startedAt": "2026-10-03T10:59:48.012Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.waitFor",
+      "label": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 12179,
+      "freshInputTokens": 10115,
+      "cacheReadTokens": 2064,
+      "cacheWriteTokens": 0,
+      "outputTokens": 492,
+      "estimatedUsd": 0.0255628,
+      "durationMs": 10063
+    },
+    {
+      "stepId": "01a1016b-8546-7bab-bfd9-561f8d81be0c:18",
+      "startedAt": "2026-10-03T10:59:58.105Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4354,
+      "freshInputTokens": 3665,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 180,
+      "estimatedUsd": 0.0092678,
+      "durationMs": 2462
+    },
+    {
+      "stepId": "01a1016b-8546-7bab-bfd9-561f8d81be0c:19",
+      "startedAt": "2026-10-03T11:00:00.569Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.extract",
+      "label": "Read the selected product’s current available quantity and the delta and reason of the movement named Received three replacement units. Return the numeric delta with its sign.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4535,
+      "freshInputTokens": 3707,
+      "cacheReadTokens": 828,
+      "cacheWriteTokens": 0,
+      "outputTokens": 48,
+      "estimatedUsd": 0.0080596,
+      "durationMs": 2312
+    },
+    {
+      "stepId": "01a1016b-c74e-724d-8246-0aad56158f44:11",
+      "startedAt": "2026-10-03T11:00:04.306Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 1,
+      "api": "agent.waitFor",
+      "label": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 12177,
+      "freshInputTokens": 10113,
+      "cacheReadTokens": 2064,
+      "cacheWriteTokens": 0,
+      "outputTokens": 482,
+      "estimatedUsd": 0.0254588,
+      "durationMs": 8990
+    },
+    {
+      "stepId": "01a1016b-c74e-724d-8246-0aad56158f44:18",
+      "startedAt": "2026-10-03T11:00:13.332Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4356,
+      "freshInputTokens": 3667,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 165,
+      "estimatedUsd": 0.0091218,
+      "durationMs": 3156
+    },
+    {
+      "stepId": "01a1016b-c74e-724d-8246-0aad56158f44:19",
+      "startedAt": "2026-10-03T11:00:16.488Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 1,
+      "api": "agent.extract",
+      "label": "Read the selected product’s current available quantity and the delta and reason of the movement named Received three replacement units. Return the numeric delta with its sign.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4537,
+      "freshInputTokens": 3709,
+      "cacheReadTokens": 828,
+      "cacheWriteTokens": 0,
+      "outputTokens": 48,
+      "estimatedUsd": 0.0080636,
+      "durationMs": 2127
+    },
+    {
+      "stepId": "01a1016c-04dc-7e0e-babd-3c2e080977f8:11",
+      "startedAt": "2026-10-03T11:00:20.241Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 2,
+      "api": "agent.waitFor",
+      "label": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 11617,
+      "freshInputTokens": 9553,
+      "cacheReadTokens": 2064,
+      "cacheWriteTokens": 0,
+      "outputTokens": 507,
+      "estimatedUsd": 0.0245888,
+      "durationMs": 10096
+    },
+    {
+      "stepId": "01a1016c-04dc-7e0e-babd-3c2e080977f8:18",
+      "startedAt": "2026-10-03T11:00:31.242Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4170,
+      "freshInputTokens": 3481,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 177,
+      "estimatedUsd": 0.008869799999999999,
+      "durationMs": 2914
+    },
+    {
+      "stepId": "01a1016c-04dc-7e0e-babd-3c2e080977f8:19",
+      "startedAt": "2026-10-03T11:00:34.157Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 2,
+      "api": "agent.extract",
+      "label": "Read the selected product’s current available quantity and the delta and reason of the movement named Received three replacement units. Return the numeric delta with its sign.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4351,
+      "freshInputTokens": 3523,
+      "cacheReadTokens": 828,
+      "cacheWriteTokens": 0,
+      "outputTokens": 48,
+      "estimatedUsd": 0.007691600000000001,
+      "durationMs": 1920
+    },
+    {
+      "stepId": "01a1016b-853b-77ca-ae00-0a7e1418649f:6",
+      "startedAt": "2026-10-03T10:59:47.583Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "Checkout contains an order summary with two units costing $25.00 and asks for a complete shipping address before placing the order.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3326,
+      "freshInputTokens": 2637,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 205,
+      "estimatedUsd": 0.0074618,
+      "durationMs": 3324
+    },
+    {
+      "stepId": "01a1016b-853b-77ca-ae00-0a7e1418649f:17",
+      "startedAt": "2026-10-03T10:59:51.022Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The shipping form contains 123 Main St, Warsaw, Mazovia, 00-001 and Poland, while the order summary still totals $25.00 for two units.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3382,
+      "freshInputTokens": 2693,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 163,
+      "estimatedUsd": 0.0071538,
+      "durationMs": 2727
+    },
+    {
+      "stepId": "01a1016b-a419-703a-b0d6-c66f124f65a7:6",
+      "startedAt": "2026-10-03T10:59:55.800Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "Checkout contains an order summary with two units costing $25.00 and asks for a complete shipping address before placing the order.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3324,
+      "freshInputTokens": 2635,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 186,
+      "estimatedUsd": 0.0072678000000000005,
+      "durationMs": 2462
+    },
+    {
+      "stepId": "01a1016b-a419-703a-b0d6-c66f124f65a7:17",
+      "startedAt": "2026-10-03T10:59:58.348Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "label": "The shipping form contains 123 Main St, Warsaw, Mazovia, 00-001 and Poland, while the order summary still totals $25.00 for two units.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3380,
+      "freshInputTokens": 2691,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 163,
+      "estimatedUsd": 0.0071498,
+      "durationMs": 2711
+    },
+    {
+      "stepId": "01a1016b-c0ea-7279-890e-bb6b809b0e4f:6",
+      "startedAt": "2026-10-03T11:00:02.626Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "Checkout contains an order summary with two units costing $25.00 and asks for a complete shipping address before placing the order.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3318,
+      "freshInputTokens": 2629,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 357,
+      "estimatedUsd": 0.0089658,
+      "durationMs": 3929
+    },
+    {
+      "stepId": "01a1016b-c0ea-7279-890e-bb6b809b0e4f:17",
+      "startedAt": "2026-10-03T11:00:06.612Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "label": "The shipping form contains 123 Main St, Warsaw, Mazovia, 00-001 and Poland, while the order summary still totals $25.00 for two units.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3374,
+      "freshInputTokens": 2685,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 154,
+      "estimatedUsd": 0.0070478,
+      "durationMs": 2556
+    }
+  ],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}

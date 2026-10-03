@@ -1,0 +1,347 @@
+{
+  "command": "npm run test:ai -- --no-cache --repeat-each 3 --workers 4 --output .e2e/stability --ai-trace",
+  "model": "claude-sonnet-5-5",
+  "startedAt": "2026-10-02T08:32:33.664Z",
+  "finishedAt": "2026-10-02T08:33:21.611Z",
+  "durationMs": 47947,
+  "summary": {
+    "discovered": 311,
+    "selected": 12,
+    "executed": 12,
+    "passed": 12,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 299
+  },
+  "usage": {
+    "discoveredResults": 311,
+    "maxAgentContextBytes": 133,
+    "maxLedgerBytes": 556,
+    "maxObservationBytes": 8364,
+    "artifactBytes": 47114078,
+    "downloads": 0,
+    "events": 103,
+    "modelTokens": 316532,
+    "maxModelCallsInStep": 4,
+    "maxActionStepsInStep": 5,
+    "modelCachedTokens": 252559
+  },
+  "agentSteps": [
+    {
+      "file": "tests/smoke.e2e.ts",
+      "titlePath": [
+        "Sonnet can navigate from login to registration"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 3832,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 3450,
+        "contextBytes": 133,
+        "ledgerBytes": 86
+      }
+    },
+    {
+      "file": "tests/smoke.e2e.ts",
+      "titlePath": [
+        "Sonnet can navigate from login to registration"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 3328,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 3450,
+        "contextBytes": 133,
+        "ledgerBytes": 86
+      }
+    },
+    {
+      "file": "tests/smoke.e2e.ts",
+      "titlePath": [
+        "Sonnet can navigate from login to registration"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 3401,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 3450,
+        "contextBytes": 133,
+        "ledgerBytes": 86
+      }
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 5065,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 5,
+        "observationBytes": 5439,
+        "contextBytes": 133,
+        "ledgerBytes": 413
+      }
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "status": "passed",
+      "durationMs": 2755,
+      "metrics": {
+        "modelCalls": 1,
+        "actionSteps": 0,
+        "observationBytes": 3511,
+        "contextBytes": 133,
+        "ledgerBytes": 0
+      }
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 4933,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 5,
+        "observationBytes": 5439,
+        "contextBytes": 133,
+        "ledgerBytes": 413
+      }
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 1,
+      "api": "agent.assert",
+      "status": "passed",
+      "durationMs": 2680,
+      "metrics": {
+        "modelCalls": 1,
+        "actionSteps": 0,
+        "observationBytes": 3511,
+        "contextBytes": 133,
+        "ledgerBytes": 0
+      }
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 5393,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 5,
+        "observationBytes": 5436,
+        "contextBytes": 133,
+        "ledgerBytes": 413
+      }
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 2,
+      "api": "agent.assert",
+      "status": "passed",
+      "durationMs": 2525,
+      "metrics": {
+        "modelCalls": 1,
+        "actionSteps": 0,
+        "observationBytes": 3508,
+        "contextBytes": 133,
+        "ledgerBytes": 0
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 8890,
+      "metrics": {
+        "modelCalls": 4,
+        "actionSteps": 1,
+        "observationBytes": 8357,
+        "contextBytes": 133,
+        "ledgerBytes": 281,
+        "pixelBytes": 86890
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.extract",
+      "status": "passed",
+      "durationMs": 2264,
+      "metrics": {
+        "modelCalls": 1,
+        "actionSteps": 0,
+        "observationBytes": 8357,
+        "contextBytes": 133,
+        "ledgerBytes": 0
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 6144,
+      "metrics": {
+        "modelCalls": 3,
+        "actionSteps": 1,
+        "observationBytes": 8361,
+        "contextBytes": 133,
+        "ledgerBytes": 281
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 1,
+      "api": "agent.extract",
+      "status": "passed",
+      "durationMs": 4040,
+      "metrics": {
+        "modelCalls": 1,
+        "actionSteps": 0,
+        "observationBytes": 8361,
+        "contextBytes": 133,
+        "ledgerBytes": 0
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 5251,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 8364,
+        "contextBytes": 133,
+        "ledgerBytes": 281
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 2,
+      "api": "agent.extract",
+      "status": "passed",
+      "durationMs": 3471,
+      "metrics": {
+        "modelCalls": 1,
+        "actionSteps": 0,
+        "observationBytes": 8364,
+        "contextBytes": 133,
+        "ledgerBytes": 0
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "recovers from no search results within the selected category"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 3512,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 8149,
+        "contextBytes": 133,
+        "ledgerBytes": 556
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "recovers from no search results within the selected category"
+      ],
+      "repeat": 1,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 3601,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 8147,
+        "contextBytes": 133,
+        "ledgerBytes": 556
+      }
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "recovers from no search results within the selected category"
+      ],
+      "repeat": 2,
+      "api": "agent.act",
+      "status": "passed",
+      "durationMs": 3318,
+      "metrics": {
+        "modelCalls": 2,
+        "actionSteps": 1,
+        "observationBytes": 8150,
+        "contextBytes": 133,
+        "ledgerBytes": 556
+      }
+    }
+  ]
+}

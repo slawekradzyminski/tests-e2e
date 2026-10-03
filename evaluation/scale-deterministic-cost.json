@@ -1,0 +1,36 @@
+{
+  "report": ".e2e/scale-deterministic/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 303,
+    "selected": 68,
+    "executed": 68,
+    "passed": 68,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 235
+  },
+  "totals": {
+    "steps": 0,
+    "modelCalls": 0,
+    "inputTokens": 0,
+    "freshInputTokens": 0,
+    "cacheReadTokens": 0,
+    "cacheWriteTokens": 0,
+    "outputTokens": 0,
+    "estimatedUsd": 0
+  },
+  "byApi": {},
+  "steps": [],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}

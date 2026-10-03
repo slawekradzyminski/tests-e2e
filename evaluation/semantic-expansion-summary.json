@@ -1,0 +1,138 @@
+{
+  "inventory": {
+    "scenarios": 11,
+    "act": 4,
+    "assert": 9,
+    "extract": 1,
+    "totalSteps": 14,
+    "newAssertions": 8
+  },
+  "verification": {
+    "initial": 11,
+    "replay": 11,
+    "newScenarioRepeatAttempts": 21,
+    "newAssertionRepeatSteps": 24,
+    "newAssertionExecutionsTotal": 40,
+    "failed": 0,
+    "retries": 0
+  },
+  "costs": {
+    "liveAllAiUsd": 0.1919939,
+    "replayAllAiUsd": 0.0792752,
+    "addedEightLiveUsd": 0.06540380000000001,
+    "addedEightRepeatMeanUsd": 0.0626344,
+    "meanNewAssertionUsd": 0.0078293,
+    "experimentTotalUsd": 0.4591723,
+    "actionReplaySavingsPercent": 58.70952150042267,
+    "projected1000ReplayRunsUsd": 79.2752
+  },
+  "perNewCheck": [
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.030761399999999994,
+      "durationMs": 10553,
+      "meanUsd": 0.010253799999999999,
+      "meanDurationMs": 3517.6666666666665
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "updates a line, recomputes multi-product totals and removes items to empty"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.0213394,
+      "durationMs": 8009,
+      "meanUsd": 0.007113133333333334,
+      "meanDurationMs": 2669.6666666666665
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "titlePath": [
+        "updates a line, recomputes multi-product totals and removes items to empty"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.0141954,
+      "durationMs": 10031,
+      "meanUsd": 0.0047318,
+      "meanDurationMs": 3343.6666666666665
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "requires the shipping address without creating an order"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.0218354,
+      "durationMs": 8217,
+      "meanUsd": 0.007278466666666667,
+      "meanDurationMs": 2739
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "preserves the cart and address when stock becomes unavailable"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.0230214,
+      "durationMs": 12131,
+      "meanUsd": 0.007673800000000001,
+      "meanDurationMs": 4043.6666666666665
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.0411474,
+      "durationMs": 10106,
+      "meanUsd": 0.0137158,
+      "meanDurationMs": 3368.6666666666665
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "titlePath": [
+        "prevents adding an out-of-stock product"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.0149074,
+      "durationMs": 9481,
+      "meanUsd": 0.004969133333333333,
+      "meanDurationMs": 3160.3333333333335
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "titlePath": [
+        "saves personal information and both assistant prompts across reload"
+      ],
+      "api": "agent.assert",
+      "samples": 3,
+      "costUsd": 0.020695400000000003,
+      "durationMs": 8362,
+      "meanUsd": 0.006898466666666668,
+      "meanDurationMs": 2787.3333333333335
+    }
+  ],
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  }
+}

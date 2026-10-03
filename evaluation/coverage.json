@@ -1,0 +1,3612 @@
+{
+  "pairs": [
+    {
+      "file": "tests/api/cart/add-cart-item.e2e.ts",
+      "title": "should merge quantities up to available stock - 200",
+      "titlePath": [
+        "POST /api/v1/cart/items",
+        "should merge quantities up to available stock - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/add-cart-item.e2e.ts",
+      "title": "should reject zero quantity without changing cart - 400",
+      "titlePath": [
+        "POST /api/v1/cart/items",
+        "should reject zero quantity without changing cart - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/add-cart-item.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "POST /api/v1/cart/items",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/add-cart-item.e2e.ts",
+      "title": "should reject a missing product - 404",
+      "titlePath": [
+        "POST /api/v1/cart/items",
+        "should reject a missing product - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/add-cart-item.e2e.ts",
+      "title": "should reject cumulative quantities above stock without changing cart - 409",
+      "titlePath": [
+        "POST /api/v1/cart/items",
+        "should reject cumulative quantities above stock without changing cart - 409"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/clear-cart.e2e.ts",
+      "title": "should clear only the caller cart without changing stock - 204",
+      "titlePath": [
+        "DELETE /api/v1/cart",
+        "should clear only the caller cart without changing stock - 204"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/clear-cart.e2e.ts",
+      "title": "should allow clearing an empty cart repeatedly - 204",
+      "titlePath": [
+        "DELETE /api/v1/cart",
+        "should allow clearing an empty cart repeatedly - 204"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/clear-cart.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "DELETE /api/v1/cart",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/get-cart.e2e.ts",
+      "title": "should return an empty cart for a new client - 200",
+      "titlePath": [
+        "GET /api/v1/cart",
+        "should return an empty cart for a new client - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/get-cart.e2e.ts",
+      "title": "should calculate totals and isolate carts by owner - 200",
+      "titlePath": [
+        "GET /api/v1/cart",
+        "should calculate totals and isolate carts by owner - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/get-cart.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/cart",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/remove-cart-item.e2e.ts",
+      "title": "should remove an item without consuming stock - 200",
+      "titlePath": [
+        "DELETE /api/v1/cart/items/{productId}",
+        "should remove an item without consuming stock - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/remove-cart-item.e2e.ts",
+      "title": "should reject a nonnumeric product identifier - 400",
+      "titlePath": [
+        "DELETE /api/v1/cart/items/{productId}",
+        "should reject a nonnumeric product identifier - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/remove-cart-item.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "DELETE /api/v1/cart/items/{productId}",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/remove-cart-item.e2e.ts",
+      "title": "should not remove another users cart item - 404",
+      "titlePath": [
+        "DELETE /api/v1/cart/items/{productId}",
+        "should not remove another users cart item - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/update-cart-item.e2e.ts",
+      "title": "should replace quantity at the stock boundary - 200",
+      "titlePath": [
+        "PUT /api/v1/cart/items/{productId}",
+        "should replace quantity at the stock boundary - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/update-cart-item.e2e.ts",
+      "title": "should remove an item when quantity is zero - 200",
+      "titlePath": [
+        "PUT /api/v1/cart/items/{productId}",
+        "should remove an item when quantity is zero - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/update-cart-item.e2e.ts",
+      "title": "should reject negative quantity without changing cart - 400",
+      "titlePath": [
+        "PUT /api/v1/cart/items/{productId}",
+        "should reject negative quantity without changing cart - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/update-cart-item.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "PUT /api/v1/cart/items/{productId}",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/update-cart-item.e2e.ts",
+      "title": "should not update another users cart item - 404",
+      "titlePath": [
+        "PUT /api/v1/cart/items/{productId}",
+        "should not update another users cart item - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/cart/update-cart-item.e2e.ts",
+      "title": "should reject quantity above stock without changing cart - 409",
+      "titlePath": [
+        "PUT /api/v1/cart/items/{productId}",
+        "should reject quantity above stock without changing cart - 409"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should apply an adjustment once when the request is repeated - 201",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should apply an adjustment once when the request is repeated - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should allow a negative adjustment down to zero stock - 201",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should allow a negative adjustment down to zero stock - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should reject a zero delta - 400",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should reject a zero delta - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should reject a request without requestId - 400",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should reject a request without requestId - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should reject unauthenticated requests - 401",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should reject unauthenticated requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should forbid a regular client - 403",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should forbid a regular client - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should reject an adjustment for a missing product - 404",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should reject an adjustment for a missing product - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should reject stock underflow without recording a movement - 409",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should reject stock underflow without recording a movement - 409"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/adjust-inventory.e2e.ts",
+      "title": "should reject a reused requestId with a different payload without mutation - 409",
+      "titlePath": [
+        "POST /api/v1/admin/inventory/{productId}/adjustments",
+        "should reject a reused requestId with a different payload without mutation - 409"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/get-inventory.e2e.ts",
+      "title": "should return the fixture product stock - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}",
+        "should return the fixture product stock - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/get-inventory.e2e.ts",
+      "title": "should classify stock above a custom threshold - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}",
+        "should classify stock above a custom threshold - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/get-inventory.e2e.ts",
+      "title": "should reject an invalid threshold - 400",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}",
+        "should reject an invalid threshold - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/get-inventory.e2e.ts",
+      "title": "should reject unauthenticated requests - 401",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}",
+        "should reject unauthenticated requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/get-inventory.e2e.ts",
+      "title": "should forbid a regular client - 403",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}",
+        "should forbid a regular client - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/get-inventory.e2e.ts",
+      "title": "should report a missing inventory item - 404",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}",
+        "should report a missing inventory item - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory-movements.e2e.ts",
+      "title": "should return the fixture product movement history - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}/movements",
+        "should return the fixture product movement history - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory-movements.e2e.ts",
+      "title": "should paginate movements newest first without duplicates - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}/movements",
+        "should paginate movements newest first without duplicates - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory-movements.e2e.ts",
+      "title": "should reject unauthenticated requests - 401",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}/movements",
+        "should reject unauthenticated requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory-movements.e2e.ts",
+      "title": "should forbid a regular client - 403",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}/movements",
+        "should forbid a regular client - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory-movements.e2e.ts",
+      "title": "should report a missing product - 404",
+      "titlePath": [
+        "GET /api/v1/admin/inventory/{productId}/movements",
+        "should report a missing product - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory.e2e.ts",
+      "title": "should list the fixture product as an administrator - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory",
+        "should list the fixture product as an administrator - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory.e2e.ts",
+      "title": "should honor page size for inventory results - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory",
+        "should honor page size for inventory results - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory.e2e.ts",
+      "title": "should combine catalog and stock filters within the fixture results - 200",
+      "titlePath": [
+        "GET /api/v1/admin/inventory",
+        "should combine catalog and stock filters within the fixture results - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory.e2e.ts",
+      "title": "should reject an invalid low stock threshold - 400",
+      "titlePath": [
+        "GET /api/v1/admin/inventory",
+        "should reject an invalid low stock threshold - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory.e2e.ts",
+      "title": "should reject unauthenticated requests - 401",
+      "titlePath": [
+        "GET /api/v1/admin/inventory",
+        "should reject unauthenticated requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/inventory/list-inventory.e2e.ts",
+      "title": "should forbid a regular client - 403",
+      "titlePath": [
+        "GET /api/v1/admin/inventory",
+        "should forbid a regular client - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat-tools.e2e.ts",
+      "title": "should execute a catalog lookup and stream the canned assistant answer - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/chat/tools",
+        "should execute a catalog lookup and stream the canned assistant answer - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat-tools.e2e.ts",
+      "title": "should execute two tools in order and return the real backend snapshot - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/chat/tools",
+        "should execute two tools in order and return the real backend snapshot - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat-tools.e2e.ts",
+      "title": "should reject an empty tool list before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat/tools",
+        "should reject an empty tool list before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat-tools.e2e.ts",
+      "title": "should reject missing model and history - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat/tools",
+        "should reject missing model and history - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat-tools.e2e.ts",
+      "title": "should reject an invalid message role - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat/tools",
+        "should reject an invalid message role - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat-tools.e2e.ts",
+      "title": "should reject unauthorized tool chat - 401",
+      "titlePath": [
+        "POST /api/v1/ollama/chat/tools",
+        "should reject unauthorized tool chat - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should stream the complete assistant response with thinking false - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should stream the complete assistant response with thinking false - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should stream the complete assistant response with thinking true - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should stream the complete assistant response with thinking true - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should not reuse conversation history from a previous request - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should not reuse conversation history from a previous request - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should reject empty history before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should reject empty history before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should reject unknown role before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should reject unknown role before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should reject blank message before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should reject blank message before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should reject tool result without a tool name before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should reject tool result without a tool name before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should reject a missing model and history - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should reject a missing model and history - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/chat.e2e.ts",
+      "title": "should reject unauthorized chat - 401",
+      "titlePath": [
+        "POST /api/v1/ollama/chat",
+        "should reject unauthorized chat - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should stream the complete release summary with thinking false - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should stream the complete release summary with thinking false - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should stream the complete release summary with thinking true - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should stream the complete release summary with thinking true - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should preserve Unicode in the assembled quote with thinking omitted - 200",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should preserve Unicode in the assembled quote with thinking omitted - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should reject missing required fields before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should reject missing required fields before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should reject blank model before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should reject blank model before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should reject blank prompt before streaming - 400",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should reject blank prompt before streaming - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/generate.e2e.ts",
+      "title": "should reject unauthorized generation - 401",
+      "titlePath": [
+        "POST /api/v1/ollama/generate",
+        "should reject unauthorized generation - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/tool-definitions.e2e.ts",
+      "title": "should describe both supported catalog functions and their arguments - 200",
+      "titlePath": [
+        "GET /api/v1/ollama/chat/tools/definitions",
+        "should describe both supported catalog functions and their arguments - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/ollama/tool-definitions.e2e.ts",
+      "title": "should reject unauthorized access to tool definitions - 401",
+      "titlePath": [
+        "GET /api/v1/ollama/chat/tools/definitions",
+        "should reject unauthorized access to tool definitions - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should cancel an owned order and restore stock - 200",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should cancel an owned order and restore stock - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should allow admin cancellation of a clients order - 200",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should allow admin cancellation of a clients order - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should reject repeated cancellation without restoring stock twice - 400",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should reject repeated cancellation without restoring stock twice - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should reject cancellation after shipping - 400",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should reject cancellation after shipping - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should reject cancellation by another client without changing order - 403",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should reject cancellation by another client without changing order - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/cancel-order.e2e.ts",
+      "title": "should return not found for a missing order - 404",
+      "titlePath": [
+        "POST /api/v1/orders/{id}/cancel",
+        "should return not found for a missing order - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/create-order.e2e.ts",
+      "title": "should create an order from cart and consume stock exactly once - 201",
+      "titlePath": [
+        "POST /api/v1/orders",
+        "should create an order from cart and consume stock exactly once - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/create-order.e2e.ts",
+      "title": "should reject checkout of an empty cart - 400",
+      "titlePath": [
+        "POST /api/v1/orders",
+        "should reject checkout of an empty cart - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/create-order.e2e.ts",
+      "title": "should reject an invalid address without consuming the cart - 400",
+      "titlePath": [
+        "POST /api/v1/orders",
+        "should reject an invalid address without consuming the cart - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/create-order.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "POST /api/v1/orders",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/create-order.e2e.ts",
+      "title": "should recheck stock at checkout and preserve cart on failure - 409",
+      "titlePath": [
+        "POST /api/v1/orders",
+        "should recheck stock at checkout and preserve cart on failure - 409"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-all-orders.e2e.ts",
+      "title": "should list orders with pagination and status filtering - 200",
+      "titlePath": [
+        "GET /api/v1/orders/admin",
+        "should list orders with pagination and status filtering - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-all-orders.e2e.ts",
+      "title": "should reject a negative page - 400",
+      "titlePath": [
+        "GET /api/v1/orders/admin",
+        "should reject a negative page - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-all-orders.e2e.ts",
+      "title": "should reject a zero page size - 400",
+      "titlePath": [
+        "GET /api/v1/orders/admin",
+        "should reject a zero page size - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-all-orders.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/orders/admin",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-all-orders.e2e.ts",
+      "title": "should forbid clients from listing all orders - 403",
+      "titlePath": [
+        "GET /api/v1/orders/admin",
+        "should forbid clients from listing all orders - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-order.e2e.ts",
+      "title": "should return the complete order to its owner - 200",
+      "titlePath": [
+        "GET /api/v1/orders/{id}",
+        "should return the complete order to its owner - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-order.e2e.ts",
+      "title": "should let an admin read a clients order - 200",
+      "titlePath": [
+        "GET /api/v1/orders/{id}",
+        "should let an admin read a clients order - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-order.e2e.ts",
+      "title": "should reject a nonnumeric order identifier - 400",
+      "titlePath": [
+        "GET /api/v1/orders/{id}",
+        "should reject a nonnumeric order identifier - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-order.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/orders/{id}",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-order.e2e.ts",
+      "title": "should hide another users order - 404",
+      "titlePath": [
+        "GET /api/v1/orders/{id}",
+        "should hide another users order - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-order.e2e.ts",
+      "title": "should return not found for a missing order - 404",
+      "titlePath": [
+        "GET /api/v1/orders/{id}",
+        "should return not found for a missing order - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-orders.e2e.ts",
+      "title": "should list orders with pagination and status filtering - 200",
+      "titlePath": [
+        "GET /api/v1/orders",
+        "should list orders with pagination and status filtering - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-orders.e2e.ts",
+      "title": "should paginate two orders and exclude cancelled orders from pending results - 200",
+      "titlePath": [
+        "GET /api/v1/orders",
+        "should paginate two orders and exclude cancelled orders from pending results - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-orders.e2e.ts",
+      "title": "should reject a negative page - 400",
+      "titlePath": [
+        "GET /api/v1/orders",
+        "should reject a negative page - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-orders.e2e.ts",
+      "title": "should reject a zero page size - 400",
+      "titlePath": [
+        "GET /api/v1/orders",
+        "should reject a zero page size - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/get-orders.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/orders",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/update-order-status.e2e.ts",
+      "title": "should persist payment shipping and delivery as admin - 200",
+      "titlePath": [
+        "PUT /api/v1/orders/{id}/status",
+        "should persist payment shipping and delivery as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/update-order-status.e2e.ts",
+      "title": "should restore stock when admin sets cancelled - 200",
+      "titlePath": [
+        "PUT /api/v1/orders/{id}/status",
+        "should restore stock when admin sets cancelled - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/update-order-status.e2e.ts",
+      "title": "should reject cancellation after delivery without changing stock - 400",
+      "titlePath": [
+        "PUT /api/v1/orders/{id}/status",
+        "should reject cancellation after delivery without changing stock - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/update-order-status.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "PUT /api/v1/orders/{id}/status",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/update-order-status.e2e.ts",
+      "title": "should forbid clients from changing their own order status - 403",
+      "titlePath": [
+        "PUT /api/v1/orders/{id}/status",
+        "should forbid clients from changing their own order status - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/orders/update-order-status.e2e.ts",
+      "title": "should return not found for a missing order - 404",
+      "titlePath": [
+        "PUT /api/v1/orders/{id}/status",
+        "should return not found for a missing order - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should create complete Unicode product as admin - 201",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should create complete Unicode product as admin - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should create minimum boundaries as admin - 201",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should create minimum boundaries as admin - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should create maximum text boundaries as admin - 201",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should create maximum text boundaries as admin - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject short name - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject short name - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject long name - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject long name - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject long description - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject long description - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject zero price - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject zero price - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject negative stock - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject negative stock - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject invalid image URL - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject invalid image URL - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject empty category - 400",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject empty category - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/create-product.e2e.ts",
+      "title": "should forbid product creation as a regular client - 403",
+      "titlePath": [
+        "POST /api/v1/products",
+        "should forbid product creation as a regular client - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/delete-product.e2e.ts",
+      "title": "should delete a product as admin - 204",
+      "titlePath": [
+        "DELETE /api/v1/products/{id}",
+        "should delete a product as admin - 204"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/delete-product.e2e.ts",
+      "title": "should reject a nonnumeric identifier - 400",
+      "titlePath": [
+        "DELETE /api/v1/products/{id}",
+        "should reject a nonnumeric identifier - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/delete-product.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "DELETE /api/v1/products/{id}",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/delete-product.e2e.ts",
+      "title": "should forbid a regular client without changing the catalog - 403",
+      "titlePath": [
+        "DELETE /api/v1/products/{id}",
+        "should forbid a regular client without changing the catalog - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/delete-product.e2e.ts",
+      "title": "should return not found for a deleted product - 404",
+      "titlePath": [
+        "DELETE /api/v1/products/{id}",
+        "should return not found for a deleted product - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-product-by-id.e2e.ts",
+      "title": "should read the product as admin - 200",
+      "titlePath": [
+        "GET /api/v1/products/{id}",
+        "should read the product as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-product-by-id.e2e.ts",
+      "title": "should read the product as client - 200",
+      "titlePath": [
+        "GET /api/v1/products/{id}",
+        "should read the product as client - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-product-by-id.e2e.ts",
+      "title": "should reject a nonnumeric identifier - 400",
+      "titlePath": [
+        "GET /api/v1/products/{id}",
+        "should reject a nonnumeric identifier - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-product-by-id.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "GET /api/v1/products/{id}",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-product-by-id.e2e.ts",
+      "title": "should return not found for a deleted product - 404",
+      "titlePath": [
+        "GET /api/v1/products/{id}",
+        "should return not found for a deleted product - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-products.e2e.ts",
+      "title": "should read the product as admin - 200",
+      "titlePath": [
+        "GET /api/v1/products",
+        "should read the product as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-products.e2e.ts",
+      "title": "should read the product as client - 200",
+      "titlePath": [
+        "GET /api/v1/products",
+        "should read the product as client - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/get-products.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "GET /api/v1/products",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should persist all mutable fields as admin - 200",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should persist all mutable fields as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should persist partial update at minimum boundaries as admin - 200",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should persist partial update at minimum boundaries as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should persist maximum text boundaries as admin - 200",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should persist maximum text boundaries as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject short name - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject short name - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject long name - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject long name - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject long description - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject long description - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject zero price - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject zero price - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject negative stock - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject negative stock - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject invalid image URL - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject invalid image URL - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject a nonnumeric identifier - 400",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject a nonnumeric identifier - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should forbid a regular client without changing the catalog - 403",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should forbid a regular client without changing the catalog - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/products/update-product.e2e.ts",
+      "title": "should return not found for a deleted product - 404",
+      "titlePath": [
+        "PUT /api/v1/products/{id}",
+        "should return not found for a deleted product - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/qr/create-qr.e2e.ts",
+      "title": "should generate a PNG for ASCII text - 200",
+      "titlePath": [
+        "POST /api/v1/qr/create",
+        "should generate a PNG for ASCII text - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/qr/create-qr.e2e.ts",
+      "title": "should generate a PNG for multiline ASCII text - 200",
+      "titlePath": [
+        "POST /api/v1/qr/create",
+        "should generate a PNG for multiline ASCII text - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/qr/create-qr.e2e.ts",
+      "title": "should reject blank text - 400",
+      "titlePath": [
+        "POST /api/v1/qr/create",
+        "should reject blank text - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/qr/create-qr.e2e.ts",
+      "title": "should reject a missing text property - 400",
+      "titlePath": [
+        "POST /api/v1/qr/create",
+        "should reject a missing text property - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/qr/create-qr.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "POST /api/v1/qr/create",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-info.e2e.ts",
+      "title": "should return websocket information for a admin - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/info",
+        "should return websocket information for a admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-info.e2e.ts",
+      "title": "should return websocket information for a client - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/info",
+        "should return websocket information for a client - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-info.e2e.ts",
+      "title": "should reject an invalid client session header - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/info",
+        "should reject an invalid client session header - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-info.e2e.ts",
+      "title": "should reject a missing session header - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/info",
+        "should reject a missing session header - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-info.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/traffic/info",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-log.e2e.ts",
+      "title": "should return the captured log to the same session as admin - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/logs/{correlationId}",
+        "should return the captured log to the same session as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-log.e2e.ts",
+      "title": "should return the captured log to the same session as client - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/logs/{correlationId}",
+        "should return the captured log to the same session as client - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-log.e2e.ts",
+      "title": "should require a valid session header - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/logs/{correlationId}",
+        "should require a valid session header - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-log.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/traffic/logs/{correlationId}",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-log.e2e.ts",
+      "title": "should hide an existing correlation from another session - 404",
+      "titlePath": [
+        "GET /api/v1/traffic/logs/{correlationId}",
+        "should hide an existing correlation from another session - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-log.e2e.ts",
+      "title": "should return an empty not-found response for an unknown correlation - 404",
+      "titlePath": [
+        "GET /api/v1/traffic/logs/{correlationId}",
+        "should return an empty not-found response for an unknown correlation - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should filter and paginate the isolated session as admin - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should filter and paginate the isolated session as admin - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should filter and paginate the isolated session as client - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should filter and paginate the isolated session as client - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should exclude captured traffic when a filter does not match - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should exclude captured traffic when a filter does not match - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should clamp both page size boundaries - 200",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should clamp both page size boundaries - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should reject negative page - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should reject negative page - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should reject invalid lower timestamp - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should reject invalid lower timestamp - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should reject invalid upper timestamp - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should reject invalid upper timestamp - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should require a valid session header - 400",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should require a valid session header - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/traffic/get-traffic-logs.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials - 401",
+      "titlePath": [
+        "GET /api/v1/traffic/logs",
+        "should reject missing, invalid and tampered credentials - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/current-user.e2e.ts",
+      "title": "should return registered user details - 200",
+      "titlePath": [
+        "/api/v1/users/me API tests",
+        "should return registered user details - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/current-user.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "/api/v1/users/me API tests",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/delete-user.e2e.ts",
+      "title": "should allow an administrator to delete an account and revoke its refresh session - 204",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}",
+        "should allow an administrator to delete an account and revoke its refresh session - 204"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/delete-user.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials without deletion - 401",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}",
+        "should reject missing, invalid and tampered credentials without deletion - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/delete-user.e2e.ts",
+      "title": "should forbid a client deleting self through the administrator endpoint - 403",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}",
+        "should forbid a client deleting self through the administrator endpoint - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/delete-user.e2e.ts",
+      "title": "should forbid a client deleting another account through the administrator endpoint - 403",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}",
+        "should forbid a client deleting another account through the administrator endpoint - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/delete-user.e2e.ts",
+      "title": "should return not found for a missing account - 404",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}",
+        "should return not found for a missing account - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/forgot-password.e2e.ts",
+      "title": "should accept a reset request by username and record its email event - 202",
+      "titlePath": [
+        "POST /api/v1/users/password/forgot",
+        "should accept a reset request by username and record its email event - 202"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/forgot-password.e2e.ts",
+      "title": "should accept a reset request by email and record its email event - 202",
+      "titlePath": [
+        "POST /api/v1/users/password/forgot",
+        "should accept a reset request by email and record its email event - 202"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/forgot-password.e2e.ts",
+      "title": "should accept an unknown identifier with the generic message and no usable token - 202",
+      "titlePath": [
+        "POST /api/v1/users/password/forgot",
+        "should accept an unknown identifier with the generic message and no usable token - 202"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/forgot-password.e2e.ts",
+      "title": "should reject an empty identifier - 400",
+      "titlePath": [
+        "POST /api/v1/users/password/forgot",
+        "should reject an empty identifier - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/get-chat-system-prompt.e2e.ts",
+      "title": "should return the default prompt for a new user - 200",
+      "titlePath": [
+        "GET /api/v1/users/chat-system-prompt",
+        "should return the default prompt for a new user - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/get-chat-system-prompt.e2e.ts",
+      "title": "should return the stored override - 200",
+      "titlePath": [
+        "GET /api/v1/users/chat-system-prompt",
+        "should return the stored override - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/get-chat-system-prompt.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "GET /api/v1/users/chat-system-prompt",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/get-tool-system-prompt.e2e.ts",
+      "title": "should return the default prompt for a new user - 200",
+      "titlePath": [
+        "GET /api/v1/users/tool-system-prompt",
+        "should return the default prompt for a new user - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/get-tool-system-prompt.e2e.ts",
+      "title": "should return the stored override - 200",
+      "titlePath": [
+        "GET /api/v1/users/tool-system-prompt",
+        "should return the stored override - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/get-tool-system-prompt.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "GET /api/v1/users/tool-system-prompt",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/login.e2e.ts",
+      "title": "should successfully authenticate with valid credentials - 200",
+      "titlePath": [
+        "/api/v1/users/signin API tests",
+        "should successfully authenticate with valid credentials - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/login.e2e.ts",
+      "title": "should return validation error for empty username - 400",
+      "titlePath": [
+        "/api/v1/users/signin API tests",
+        "should return validation error for empty username - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/login.e2e.ts",
+      "title": "should return validation error for username too short - 400",
+      "titlePath": [
+        "/api/v1/users/signin API tests",
+        "should return validation error for username too short - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/login.e2e.ts",
+      "title": "should return validation error for password too short - 400",
+      "titlePath": [
+        "/api/v1/users/signin API tests",
+        "should return validation error for password too short - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/login.e2e.ts",
+      "title": "should return authentication error for both invalid credentials - 422",
+      "titlePath": [
+        "/api/v1/users/signin API tests",
+        "should return authentication error for both invalid credentials - 422"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/logout.e2e.ts",
+      "title": "should revoke refresh tokens from every session - 200",
+      "titlePath": [
+        "POST /api/v1/users/logout",
+        "should revoke refresh tokens from every session - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/logout.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "POST /api/v1/users/logout",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/refresh.e2e.ts",
+      "title": "should rotate tokens without requiring an access token - 200",
+      "titlePath": [
+        "POST /api/v1/users/refresh",
+        "should rotate tokens without requiring an access token - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/refresh.e2e.ts",
+      "title": "should reject missing refresh token - 400",
+      "titlePath": [
+        "POST /api/v1/users/refresh",
+        "should reject missing refresh token - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/refresh.e2e.ts",
+      "title": "should reject null refresh token - 400",
+      "titlePath": [
+        "POST /api/v1/users/refresh",
+        "should reject null refresh token - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/refresh.e2e.ts",
+      "title": "should reject empty refresh token - 400",
+      "titlePath": [
+        "POST /api/v1/users/refresh",
+        "should reject empty refresh token - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/refresh.e2e.ts",
+      "title": "should reject blank refresh token - 400",
+      "titlePath": [
+        "POST /api/v1/users/refresh",
+        "should reject blank refresh token - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/refresh.e2e.ts",
+      "title": "should reject invalid, wrong-type and consumed tokens - 401",
+      "titlePath": [
+        "POST /api/v1/users/refresh",
+        "should reject invalid, wrong-type and consumed tokens - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/reset-password.e2e.ts",
+      "title": "should reset the password and revoke only refresh sessions belonging to that account - 200",
+      "titlePath": [
+        "POST /api/v1/users/password/reset",
+        "should reset the password and revoke only refresh sessions belonging to that account - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/reset-password.e2e.ts",
+      "title": "should reject an invalid reset token without changing the password or session - 400",
+      "titlePath": [
+        "POST /api/v1/users/password/reset",
+        "should reject an invalid reset token without changing the password or session - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/reset-password.e2e.ts",
+      "title": "should reject mismatched passwords without consuming a valid token - 400",
+      "titlePath": [
+        "POST /api/v1/users/password/reset",
+        "should reject mismatched passwords without consuming a valid token - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/reset-password.e2e.ts",
+      "title": "should reject a consumed token without replacing the new password - 400",
+      "titlePath": [
+        "POST /api/v1/users/password/reset",
+        "should reject a consumed token without replacing the new password - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/right-to-be-forgotten.e2e.ts",
+      "title": "should let the owner delete the account and invalidate refresh and reset tokens - 204",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}/right-to-be-forgotten",
+        "should let the owner delete the account and invalidate refresh and reset tokens - 204"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/right-to-be-forgotten.e2e.ts",
+      "title": "should let the administrator delete the account and invalidate refresh and reset tokens - 204",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}/right-to-be-forgotten",
+        "should let the administrator delete the account and invalidate refresh and reset tokens - 204"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/right-to-be-forgotten.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials without deletion - 401",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}/right-to-be-forgotten",
+        "should reject missing, invalid and tampered credentials without deletion - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/right-to-be-forgotten.e2e.ts",
+      "title": "should reject a client forgetting another account and preserve the target - 403",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}/right-to-be-forgotten",
+        "should reject a client forgetting another account and preserve the target - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/right-to-be-forgotten.e2e.ts",
+      "title": "should return not found for a missing account - 404",
+      "titlePath": [
+        "DELETE /api/v1/users/{username}/right-to-be-forgotten",
+        "should return not found for a missing account - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/signup.e2e.ts",
+      "title": "should create an account with valid data - 201",
+      "titlePath": [
+        "/api/v1/users/signup API tests",
+        "should create an account with valid data - 201"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/signup.e2e.ts",
+      "title": "should reject empty username - 400",
+      "titlePath": [
+        "/api/v1/users/signup API tests",
+        "should reject empty username - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/signup.e2e.ts",
+      "title": "should reject short password - 400",
+      "titlePath": [
+        "/api/v1/users/signup API tests",
+        "should reject short password - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/signup.e2e.ts",
+      "title": "should reject invalid email - 400",
+      "titlePath": [
+        "/api/v1/users/signup API tests",
+        "should reject invalid email - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/signup.e2e.ts",
+      "title": "should reject duplicate username - 400",
+      "titlePath": [
+        "/api/v1/users/signup API tests",
+        "should reject duplicate username - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/signup.e2e.ts",
+      "title": "should reject duplicate email - 400",
+      "titlePath": [
+        "/api/v1/users/signup API tests",
+        "should reject duplicate email - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-chat-system-prompt.e2e.ts",
+      "title": "should persist multiline Unicode override - 200",
+      "titlePath": [
+        "PUT /api/v1/users/chat-system-prompt",
+        "should persist multiline Unicode override - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-chat-system-prompt.e2e.ts",
+      "title": "should persist maximum length override - 200",
+      "titlePath": [
+        "PUT /api/v1/users/chat-system-prompt",
+        "should persist maximum length override - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-chat-system-prompt.e2e.ts",
+      "title": "should restore the default when the override is cleared - 200",
+      "titlePath": [
+        "PUT /api/v1/users/chat-system-prompt",
+        "should restore the default when the override is cleared - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-chat-system-prompt.e2e.ts",
+      "title": "should reject an overlong prompt without changing the stored value - 400",
+      "titlePath": [
+        "PUT /api/v1/users/chat-system-prompt",
+        "should reject an overlong prompt without changing the stored value - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-chat-system-prompt.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "PUT /api/v1/users/chat-system-prompt",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-tool-system-prompt.e2e.ts",
+      "title": "should persist multiline Unicode override - 200",
+      "titlePath": [
+        "PUT /api/v1/users/tool-system-prompt",
+        "should persist multiline Unicode override - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-tool-system-prompt.e2e.ts",
+      "title": "should persist maximum length override - 200",
+      "titlePath": [
+        "PUT /api/v1/users/tool-system-prompt",
+        "should persist maximum length override - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-tool-system-prompt.e2e.ts",
+      "title": "should restore the default when the override is cleared - 200",
+      "titlePath": [
+        "PUT /api/v1/users/tool-system-prompt",
+        "should restore the default when the override is cleared - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-tool-system-prompt.e2e.ts",
+      "title": "should reject an overlong prompt without changing the stored value - 400",
+      "titlePath": [
+        "PUT /api/v1/users/tool-system-prompt",
+        "should reject an overlong prompt without changing the stored value - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-tool-system-prompt.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "PUT /api/v1/users/tool-system-prompt",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-user.e2e.ts",
+      "title": "should update the owner profile without changing privileges - 200",
+      "titlePath": [
+        "PUT /api/v1/users/{username}",
+        "should update the owner profile without changing privileges - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-user.e2e.ts",
+      "title": "should allow an administrator to edit another account - 200",
+      "titlePath": [
+        "PUT /api/v1/users/{username}",
+        "should allow an administrator to edit another account - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-user.e2e.ts",
+      "title": "should reject invalid profile fields without changing the profile - 400",
+      "titlePath": [
+        "PUT /api/v1/users/{username}",
+        "should reject invalid profile fields without changing the profile - 400"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-user.e2e.ts",
+      "title": "should reject missing, invalid and tampered credentials without mutation - 401",
+      "titlePath": [
+        "PUT /api/v1/users/{username}",
+        "should reject missing, invalid and tampered credentials without mutation - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-user.e2e.ts",
+      "title": "should reject a client editing another account - 403",
+      "titlePath": [
+        "PUT /api/v1/users/{username}",
+        "should reject a client editing another account - 403"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/update-user.e2e.ts",
+      "title": "should return not found for a missing account - 404",
+      "titlePath": [
+        "PUT /api/v1/users/{username}",
+        "should return not found for a missing account - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/user-by-username.e2e.ts",
+      "title": "should return the requested account - 200",
+      "titlePath": [
+        "GET /api/v1/users/{username}",
+        "should return the requested account - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/user-by-username.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "GET /api/v1/users/{username}",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/user-by-username.e2e.ts",
+      "title": "should report an unknown username - 404",
+      "titlePath": [
+        "GET /api/v1/users/{username}",
+        "should report an unknown username - 404"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/users.e2e.ts",
+      "title": "should return registered user details - 200",
+      "titlePath": [
+        "/api/v1/users API tests",
+        "should return registered user details - 200"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/api/users/users.e2e.ts",
+      "title": "should reject unauthorized requests - 401",
+      "titlePath": [
+        "/api/v1/users API tests",
+        "should reject unauthorized requests - 401"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/smoke.e2e.ts",
+      "title": "Sonnet can navigate from login to registration",
+      "titlePath": [
+        "Sonnet can navigate from login to registration"
+      ],
+      "kind": "test",
+      "tags": [
+        "smoke",
+        "ai"
+      ],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/add-product.e2e.ts",
+      "title": "creates a product and exposes its saved values in the admin catalog",
+      "titlePath": [
+        "creates a product and exposes its saved values in the admin catalog"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/add-product.e2e.ts",
+      "title": "denies clients access to product creation",
+      "titlePath": [
+        "denies clients access to product creation"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-dashboard.e2e.ts",
+      "title": "identifies a low-stock product and opens the matching editor",
+      "titlePath": [
+        "identifies a low-stock product and opens the matching editor"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-dashboard.e2e.ts",
+      "title": "denies clients access to the admin dashboard",
+      "titlePath": [
+        "denies clients access to the admin dashboard"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "title": "selects a product and records a stock adjustment with movement history",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "title": "denies clients access to inventory administration",
+      "titlePath": [
+        "denies clients access to inventory administration"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "title": "filters orders, opens the selected order and saves its new status",
+      "titlePath": [
+        "filters orders, opens the selected order and saves its new status"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-orders.e2e.ts",
+      "title": "denies clients access to all-customer order administration",
+      "titlePath": [
+        "denies clients access to all-customer order administration"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-products.e2e.ts",
+      "title": "lists a disposable product and deletes it only after confirmation",
+      "titlePath": [
+        "lists a disposable product and deletes it only after confirmation"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/admin-products.e2e.ts",
+      "title": "denies clients access to catalog administration",
+      "titlePath": [
+        "denies clients access to catalog administration"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens products",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens products"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens Send Email",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens Send Email"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens QR Code",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens QR Code"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens LLM",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens LLM"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens Traffic Monitor",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens Traffic Monitor"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens the cart",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens the cart"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "opens the user profile",
+      "titlePath": [
+        "Authenticated header — client",
+        "opens the user profile"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "returns home through the brand",
+      "titlePath": [
+        "Authenticated header — client",
+        "returns home through the brand"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "logs out and prevents reopening home",
+      "titlePath": [
+        "Authenticated header — client",
+        "logs out and prevents reopening home"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "identifies the signed-in user",
+      "titlePath": [
+        "Authenticated header — client permissions",
+        "identifies the signed-in user"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "does not expose the Admin link",
+      "titlePath": [
+        "Authenticated header — client permissions",
+        "does not expose the Admin link"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/authenticated-header.e2e.ts",
+      "title": "shows the Admin link and opens the dashboard",
+      "titlePath": [
+        "Authenticated header — admin permissions",
+        "shows the Admin link and opens the dashboard"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "title": "updates a line, recomputes multi-product totals and removes items to empty",
+      "titlePath": [
+        "updates a line, recomputes multi-product totals and removes items to empty"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "title": "clears the cart only after confirmation",
+      "titlePath": [
+        "clears the cart only after confirmation"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/cart.e2e.ts",
+      "title": "continues to checkout with the saved cart",
+      "titlePath": [
+        "continues to checkout with the saved cart"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "title": "places an order with the shipping address and empties the cart",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "title": "requires the shipping address without creating an order",
+      "titlePath": [
+        "requires the shipping address without creating an order"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "title": "returns an empty-cart checkout visit to the cart",
+      "titlePath": [
+        "returns an empty-cart checkout visit to the cart"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/checkout.e2e.ts",
+      "title": "preserves the cart and address when stock becomes unavailable",
+      "titlePath": [
+        "preserves the cart and address when stock becomes unavailable"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "title": "edits a disposable product and persists all catalog fields",
+      "titlePath": [
+        "edits a disposable product and persists all catalog fields"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/edit-product.e2e.ts",
+      "title": "denies clients access to editing an existing product",
+      "titlePath": [
+        "denies clients access to editing an existing product"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/edit-user.e2e.ts",
+      "title": "saves edits to a disposable user and returns to the directory",
+      "titlePath": [
+        "saves edits to a disposable user and returns to the directory"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/edit-user.e2e.ts",
+      "title": "cancels a populated edit without saving it",
+      "titlePath": [
+        "cancels a populated edit without saving it"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/edit-user.e2e.ts",
+      "title": "denies a client direct access to user editing",
+      "titlePath": [
+        "denies a client direct access to user editing"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "shows the API-authenticated user after a reload",
+      "titlePath": [
+        "Home screen",
+        "shows the API-authenticated user after a reload"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens the product catalog",
+      "titlePath": [
+        "Home screen",
+        "opens the product catalog"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens profile and orders",
+      "titlePath": [
+        "Home screen",
+        "opens profile and orders"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens the users directory",
+      "titlePath": [
+        "Home screen",
+        "opens the users directory"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens the AI assistant",
+      "titlePath": [
+        "Home screen",
+        "opens the AI assistant"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens Traffic Monitor",
+      "titlePath": [
+        "Home screen",
+        "opens Traffic Monitor"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens the QR code generator",
+      "titlePath": [
+        "Home screen",
+        "opens the QR code generator"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "title": "opens Send Email",
+      "titlePath": [
+        "Home screen",
+        "opens Send Email"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "title": "redirects a guest from home to sign in",
+      "titlePath": [
+        "Logged-out header",
+        "redirects a guest from home to sign in"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "title": "opens registration",
+      "titlePath": [
+        "Logged-out header",
+        "opens registration"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "title": "opens login from registration",
+      "titlePath": [
+        "Logged-out header",
+        "opens login from registration"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/logged-out-header.e2e.ts",
+      "title": "returns to login through the brand",
+      "titlePath": [
+        "Logged-out header",
+        "returns to login through the brand"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "title": "signs in with valid credentials",
+      "titlePath": [
+        "Login screen",
+        "signs in with valid credentials"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "title": "requires credentials before signing in",
+      "titlePath": [
+        "Login screen",
+        "requires credentials before signing in"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "title": "shows a useful error for invalid credentials",
+      "titlePath": [
+        "Login screen",
+        "shows a useful error for invalid credentials"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "title": "opens registration from the form",
+      "titlePath": [
+        "Login screen",
+        "opens registration from the form"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/login.e2e.ts",
+      "title": "opens password recovery",
+      "titlePath": [
+        "Login screen",
+        "opens password recovery"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/order-details.e2e.ts",
+      "title": "shows the own order and cancels it only after confirmation",
+      "titlePath": [
+        "shows the own order and cancels it only after confirmation"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "title": "adds, updates and removes a product from its detail screen",
+      "titlePath": [
+        "adds, updates and removes a product from its detail screen"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "title": "prevents adding an out-of-stock product",
+      "titlePath": [
+        "prevents adding an out-of-stock product"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/product-details.e2e.ts",
+      "title": "offers catalog recovery when a product is no longer available",
+      "titlePath": [
+        "offers catalog recovery when a product is no longer available"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "title": "combines category and case-insensitive search",
+      "titlePath": [
+        "Products screen",
+        "combines category and case-insensitive search"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "title": "sorts a category by price in both directions",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "title": "recovers from no search results within the selected category",
+      "titlePath": [
+        "Products screen",
+        "recovers from no search results within the selected category"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "title": "opens the selected product details",
+      "titlePath": [
+        "Products screen",
+        "opens the selected product details"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/products.e2e.ts",
+      "title": "keeps cart items, header count and toasts consistent across add, update and remove",
+      "titlePath": [
+        "Products screen",
+        "keeps cart items, header count and toasts consistent across add, update and remove"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "title": "saves personal information and both assistant prompts across reload",
+      "titlePath": [
+        "saves personal information and both assistant prompts across reload"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/profile.e2e.ts",
+      "title": "filters order history and opens the matching order",
+      "titlePath": [
+        "filters order history and opens the matching order"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "title": "creates an account that can sign in",
+      "titlePath": [
+        "Registration screen",
+        "creates an account that can sign in"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "title": "requires account details before registration",
+      "titlePath": [
+        "Registration screen",
+        "requires account details before registration"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "title": "rejects an existing username",
+      "titlePath": [
+        "Registration screen",
+        "rejects an existing username"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/register.e2e.ts",
+      "title": "opens sign in for an existing account",
+      "titlePath": [
+        "Registration screen",
+        "opens sign in for an existing account"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/users.e2e.ts",
+      "title": "shows the directory without admin edit or delete controls for clients",
+      "titlePath": [
+        "shows the directory without admin edit or delete controls for clients"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    },
+    {
+      "file": "tests/ui/users.e2e.ts",
+      "title": "deletes a disposable user from the directory",
+      "titlePath": [
+        "deletes a disposable user from the directory"
+      ],
+      "kind": "test",
+      "tags": [],
+      "target": "chromium",
+      "disposition": "run"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+import { readFileSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
+const baseline = JSON.parse(readFileSync('evaluation/source-coverage.json', 'utf8'));
+const native = JSON.parse(execFileSync('npx', ['e2e', 'list', '--reporter', 'json'], { encoding: 'utf8' })).pairs;
+const key = entry => `${entry.file} › ${entry.titlePath.join(' › ')}`;
+const expected = new Set(baseline.scenarios.map(key));
+const actual = new Set(native.map(key));
+const missing = [...expected].filter(k => !actual.has(k));
+const extras = native.filter(entry => !expected.has(key(entry)));
+const skipped = native.filter(entry => entry.disposition !== 'run');
+const result = { source: baseline.source, original: expected.size, recreated: native.length - extras.length, extras: extras.map(key), missing, skipped };
+writeFileSync('evaluation/coverage-verification.json', JSON.stringify(result, null, 2) + '\n');
+console.log(JSON.stringify(result, null, 2));
+if (missing.length || skipped.length) process.exitCode = 1;

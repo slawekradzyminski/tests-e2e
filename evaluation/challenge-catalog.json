@@ -1,0 +1,219 @@
+{
+  "scope": "Frozen attempt-local screen faults; healthy controls validated before mutation. Hidden inventory state is an additional disposable API-state fault.",
+  "probes": {
+    "cart": [
+      {
+        "id": "cart-total-large",
+        "selector": "[data-testid=\"cart-summary-total-price\"]",
+        "property": "text",
+        "expected": "$42.50",
+        "faulty": "$52.50",
+        "contract": "Combined total must equal $42.50."
+      },
+      {
+        "id": "cart-total-cent",
+        "selector": "[data-testid=\"cart-summary-total-price\"]",
+        "property": "text",
+        "expected": "$42.50",
+        "faulty": "$42.49",
+        "contract": "A one-cent arithmetic error still violates the exact money contract."
+      },
+      {
+        "id": "cart-count",
+        "selector": "[data-testid=\"cart-summary-items-count\"]",
+        "property": "text",
+        "expected": "4",
+        "faulty": "3",
+        "contract": "Summary must combine three plus one units as four."
+      }
+    ],
+    "empty": [
+      {
+        "id": "empty-cart-stale-count",
+        "selector": "[data-testid=\"desktop-cart-icon\"] [data-testid=\"cart-item-count\"]",
+        "property": "exists",
+        "expected": false,
+        "faulty": true,
+        "contract": "Empty cart must not retain a positive navigation count."
+      }
+    ],
+    "inventory": [
+      {
+        "id": "inventory-stock",
+        "selector": "[data-testid=\"inventory-inspector\"]",
+        "leafText": "13",
+        "property": "text",
+        "expected": "13",
+        "faulty": "12",
+        "contract": "Ten plus three available units must be thirteen."
+      },
+      {
+        "id": "inventory-delta",
+        "selector": "[data-testid=\"inventory-inspector\"]",
+        "leafText": "+3",
+        "property": "text",
+        "expected": "+3",
+        "faulty": "+2",
+        "contract": "Movement delta must record the actual three-unit adjustment."
+      }
+    ],
+    "paid": [
+      {
+        "id": "paid-status",
+        "selector": "[data-testid=\"order-details-status\"]",
+        "property": "text",
+        "expected": "PAID",
+        "faulty": "PENDING",
+        "contract": "Saved paid status must be shown."
+      },
+      {
+        "id": "paid-total-cent",
+        "selector": "[data-testid=\"order-details-total-amount\"]",
+        "property": "text",
+        "expected": "$25.00",
+        "faulty": "$24.99",
+        "contract": "Ordered total must be exactly $25.00."
+      },
+      {
+        "id": "paid-address",
+        "selector": "[data-testid=\"order-details-address-city-state\"]",
+        "property": "text",
+        "expected": "Warsaw, Mazovia 00-001",
+        "faulty": "Krakow, Mazovia 00-001",
+        "contract": "Shipping city must remain Warsaw."
+      }
+    ],
+    "cancelled": [
+      {
+        "id": "cancelled-status",
+        "selector": "[data-testid=\"order-details-status\"]",
+        "property": "text",
+        "expected": "CANCELLED",
+        "faulty": "PENDING",
+        "contract": "A confirmed cancellation must show cancelled status."
+      },
+      {
+        "id": "cancelled-action",
+        "selector": "[data-testid=\"order-details-cancel-button\"]",
+        "property": "exists",
+        "expected": false,
+        "faulty": true,
+        "contract": "Cancelled orders must not offer cancellation again."
+      }
+    ],
+    "stock": [
+      {
+        "id": "out-of-stock-enabled",
+        "selector": "[data-testid=\"add-to-cart\"]",
+        "property": "disabled",
+        "expected": true,
+        "faulty": false,
+        "contract": "Out-of-stock purchase action must be disabled."
+      },
+      {
+        "id": "out-of-stock-message",
+        "selector": "[data-testid=\"product-stock\"]",
+        "property": "text",
+        "expected": "Out of stock",
+        "faulty": "In stock",
+        "contract": "Stock message must describe actual unavailability."
+      }
+    ],
+    "prompts": [
+      {
+        "id": "chat-prompt-meaning",
+        "selector": "[data-testid=\"profile-prompt-input\"]",
+        "property": "value",
+        "expected": "Answer briefly using supplied context.",
+        "faulty": "Answer at length and ignore supplied context.",
+        "contract": "Saved chat instructions must ask for brevity and grounding."
+      },
+      {
+        "id": "tool-prompt-meaning",
+        "selector": "[data-testid=\"profile-tool-prompt-input\"]",
+        "property": "value",
+        "expected": "Use tools to verify product availability.",
+        "faulty": "Never use tools to verify product availability.",
+        "contract": "Saved tool instructions must request availability verification."
+      }
+    ],
+    "missing": [
+      {
+        "id": "missing-address-total",
+        "selector": "[data-testid=\"checkout-total-amount\"]",
+        "property": "text",
+        "expected": "$25.00",
+        "faulty": "$26.00",
+        "contract": "Validation must retain the original order total."
+      },
+      {
+        "id": "missing-address-feedback",
+        "selector": "[data-testid=\"checkout-street-error\"]",
+        "property": "text",
+        "expected": "Street address is required",
+        "faulty": "Street address is optional",
+        "contract": "Required-field feedback must not falsely describe the street as optional."
+      }
+    ],
+    "unavailable": [
+      {
+        "id": "unavailable-cart-message",
+        "selector": "[data-testid=\"checkout-availability-error\"]",
+        "property": "text",
+        "expected": "Some items are no longer available in the requested quantity. Your cart was preserved; review it before trying again.",
+        "faulty": "Some items are no longer available. Your cart was deleted; start again.",
+        "contract": "Recovery message must explain that the cart was preserved."
+      },
+      {
+        "id": "unavailable-lost-address",
+        "selector": "[data-testid=\"checkout-city-input\"]",
+        "property": "value",
+        "expected": "Warsaw",
+        "faulty": "",
+        "contract": "Failed checkout must preserve the entered city."
+      }
+    ]
+  },
+  "heldoutProbes": {
+    "cart": [
+      {
+        "id": "heldout-cart-line-quantity",
+        "selector": "[data-testid^=\"cart-item-quantity-\"]",
+        "leafText": "1",
+        "property": "text",
+        "expected": "1",
+        "faulty": "2",
+        "contract": "The second product line must retain one unit, not two."
+      }
+    ],
+    "paid": [
+      {
+        "id": "heldout-order-unit-count",
+        "selector": "[data-testid^=\"order-item-price-details-\"]",
+        "property": "text",
+        "expected": "$12.5 x 2",
+        "faulty": "$12.5 x 1",
+        "contract": "The order item must retain two units."
+      },
+      {
+        "id": "heldout-order-country",
+        "selector": "[data-testid=\"order-details-address-country\"]",
+        "property": "text",
+        "expected": "Poland",
+        "faulty": "Germany",
+        "contract": "Shipping country must remain Poland."
+      }
+    ],
+    "prompts": [
+      {
+        "id": "heldout-chat-tool-role-swap",
+        "selector": "[data-testid=\"profile-prompt-input\"]",
+        "property": "value",
+        "expected": "Answer briefly using supplied context.",
+        "faulty": "Use tools to verify product availability.",
+        "contract": "The chat prompt must retain the brevity/context instruction rather than the tool instruction."
+      }
+    ]
+  },
+  "heldoutScope": "Four additional fault variants chosen after original catalog and oracle refinement, evaluated with refined prompts unchanged. Each repeated twice."
+}

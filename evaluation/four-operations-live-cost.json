@@ -1,0 +1,403 @@
+{
+  "report": ".e2e/four-operations-live/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 303,
+    "selected": 3,
+    "executed": 3,
+    "passed": 3,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 300
+  },
+  "totals": {
+    "steps": 16,
+    "modelCalls": 26,
+    "inputTokens": 231818,
+    "freshInputTokens": 33707,
+    "cacheReadTokens": 146886,
+    "cacheWriteTokens": 51225,
+    "outputTokens": 3823,
+    "estimatedUsd": 0.2630837
+  },
+  "byApi": {
+    "agent.act": {
+      "steps": 6,
+      "modelCalls": 16,
+      "inputTokens": 191032,
+      "freshInputTokens": 44,
+      "cacheReadTokens": 142753,
+      "cacheWriteTokens": 48235,
+      "outputTokens": 1992,
+      "estimatedUsd": 0.1691461
+    },
+    "agent.waitFor": {
+      "steps": 2,
+      "modelCalls": 2,
+      "inputTokens": 7653,
+      "freshInputTokens": 6277,
+      "cacheReadTokens": 688,
+      "cacheWriteTokens": 688,
+      "outputTokens": 333,
+      "estimatedUsd": 0.0177416
+    },
+    "agent.assert": {
+      "steps": 6,
+      "modelCalls": 6,
+      "inputTokens": 23264,
+      "freshInputTokens": 19130,
+      "cacheReadTokens": 3445,
+      "cacheWriteTokens": 689,
+      "outputTokens": 1133,
+      "estimatedUsd": 0.0520015
+    },
+    "agent.extract": {
+      "steps": 2,
+      "modelCalls": 2,
+      "inputTokens": 9869,
+      "freshInputTokens": 8256,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 1613,
+      "outputTokens": 365,
+      "estimatedUsd": 0.0241945
+    }
+  },
+  "steps": [
+    {
+      "stepId": "01a1016a-87ba-751c-ab41-5d6c5956283b:3",
+      "startedAt": "2026-10-03T10:58:44.834Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Search inventory for {name}, then select that exact product to inspect its stock. Do not change stock yet.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 41506,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 24229,
+      "cacheWriteTokens": 17269,
+      "outputTokens": 333,
+      "estimatedUsd": 0.0513643,
+      "durationMs": 7348
+    },
+    {
+      "stepId": "01a1016a-87ba-751c-ab41-5d6c5956283b:6",
+      "startedAt": "2026-10-03T10:58:52.232Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "For the currently selected product, add 3 units of inventory with the reason Received three replacement units. Apply this adjustment exactly once.",
+      "status": "passed",
+      "modelCalls": 3,
+      "inputTokens": 36890,
+      "freshInputTokens": 8,
+      "cacheReadTokens": 31282,
+      "cacheWriteTokens": 5600,
+      "outputTokens": 317,
+      "estimatedUsd": 0.023442400000000002,
+      "durationMs": 6224
+    },
+    {
+      "stepId": "01a1016a-87ba-751c-ab41-5d6c5956283b:7",
+      "startedAt": "2026-10-03T10:58:58.456Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.waitFor",
+      "label": "The selected product currently displays 13 available units and a movement adding 3 units with the reason Received three replacement units.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 5117,
+      "freshInputTokens": 4429,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 688,
+      "outputTokens": 180,
+      "estimatedUsd": 0.012378,
+      "durationMs": 2659
+    },
+    {
+      "stepId": "01a1016a-87ba-751c-ab41-5d6c5956283b:12",
+      "startedAt": "2026-10-03T10:59:01.146Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The selected product has 13 units available. Its movement history records an addition of 3 units with the reason Received three replacement units, consistent with increasing the stock from 10 to 13.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 5138,
+      "freshInputTokens": 4449,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 164,
+      "estimatedUsd": 0.0106758,
+      "durationMs": 2194
+    },
+    {
+      "stepId": "01a1016a-87ba-751c-ab41-5d6c5956283b:13",
+      "startedAt": "2026-10-03T10:59:03.341Z",
+      "file": "tests/ui/admin-inventory.e2e.ts",
+      "titlePath": [
+        "selects a product and records a stock adjustment with movement history"
+      ],
+      "repeat": 0,
+      "api": "agent.extract",
+      "label": "Read the selected product’s current available quantity and the delta and reason of the movement named Received three replacement units. Return the numeric delta with its sign.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 5319,
+      "freshInputTokens": 4491,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 828,
+      "outputTokens": 48,
+      "estimatedUsd": 0.011532,
+      "durationMs": 2506
+    },
+    {
+      "stepId": "01a1016a-87bf-7ca3-9d95-9c3fa57dfc95:6",
+      "startedAt": "2026-10-03T10:58:44.831Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "Checkout contains an order summary with two units costing $25.00 and asks for a complete shipping address before placing the order.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3342,
+      "freshInputTokens": 2653,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 689,
+      "outputTokens": 339,
+      "estimatedUsd": 0.0104185,
+      "durationMs": 4736
+    },
+    {
+      "stepId": "01a1016a-87bf-7ca3-9d95-9c3fa57dfc95:7",
+      "startedAt": "2026-10-03T10:58:49.567Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Fill the checkout shipping address using street {street}, city {city}, state {state}, ZIP code {zipCode}, and country {country}. Leave the order unsubmitted.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 21436,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17418,
+      "cacheWriteTokens": 4012,
+      "outputTokens": 472,
+      "estimatedUsd": 0.018245599999999997,
+      "durationMs": 5658
+    },
+    {
+      "stepId": "01a1016a-87bf-7ca3-9d95-9c3fa57dfc95:13",
+      "startedAt": "2026-10-03T10:58:55.262Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The shipping form contains 123 Main St, Warsaw, Mazovia, 00-001 and Poland, while the order summary still totals $25.00 for two units.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 3398,
+      "freshInputTokens": 2709,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 180,
+      "estimatedUsd": 0.0073558,
+      "durationMs": 2607
+    },
+    {
+      "stepId": "01a1016a-87bf-7ca3-9d95-9c3fa57dfc95:15",
+      "startedAt": "2026-10-03T10:58:57.870Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Place this order once using Place Order and stop at its confirmation page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22968,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17926,
+      "cacheWriteTokens": 5036,
+      "outputTokens": 216,
+      "estimatedUsd": 0.0183472,
+      "durationMs": 4344
+    },
+    {
+      "stepId": "01a1016a-87bf-7ca3-9d95-9c3fa57dfc95:16",
+      "startedAt": "2026-10-03T10:59:02.214Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.waitFor",
+      "label": "The order details are visible with PENDING status, ordered items and shipping information.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2536,
+      "freshInputTokens": 1848,
+      "cacheReadTokens": 688,
+      "cacheWriteTokens": 0,
+      "outputTokens": 153,
+      "estimatedUsd": 0.0053636000000000005,
+      "durationMs": 2755
+    },
+    {
+      "stepId": "01a1016a-87bf-7ca3-9d95-9c3fa57dfc95:26",
+      "startedAt": "2026-10-03T10:59:05.019Z",
+      "file": "tests/ui/checkout.e2e.ts",
+      "titlePath": [
+        "places an order with the shipping address and empties the cart"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The page confirms an order with PENDING status, an ordered item with quantity 2, total $25.00, and a shipping address in Warsaw, Poland.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 2563,
+      "freshInputTokens": 1874,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 145,
+      "estimatedUsd": 0.0053358,
+      "durationMs": 2595
+    },
+    {
+      "stepId": "01a1016a-87ba-7697-8fe2-c885f23938d1:4",
+      "startedAt": "2026-10-03T10:58:44.947Z",
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (Low to High).",
+      "status": "passed",
+      "modelCalls": 4,
+      "inputTokens": 45453,
+      "freshInputTokens": 10,
+      "cacheReadTokens": 33407,
+      "cacheWriteTokens": 12036,
+      "outputTokens": 443,
+      "estimatedUsd": 0.0412214,
+      "durationMs": 9170
+    },
+    {
+      "stepId": "01a1016a-87ba-7697-8fe2-c885f23938d1:6",
+      "startedAt": "2026-10-03T10:58:54.130Z",
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The visible product cards are arranged by price in ascending order, and the sort selection describes that same direction.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4412,
+      "freshInputTokens": 3723,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 158,
+      "estimatedUsd": 0.0091638,
+      "durationMs": 2856
+    },
+    {
+      "stepId": "01a1016a-87ba-7697-8fe2-c885f23938d1:7",
+      "startedAt": "2026-10-03T10:58:56.986Z",
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.extract",
+      "label": "Read the visible product names in their display order, excluding categories and navigation.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4550,
+      "freshInputTokens": 3765,
+      "cacheReadTokens": 0,
+      "cacheWriteTokens": 785,
+      "outputTokens": 317,
+      "estimatedUsd": 0.0126625,
+      "durationMs": 4543
+    },
+    {
+      "stepId": "01a1016a-87ba-7697-8fe2-c885f23938d1:8",
+      "startedAt": "2026-10-03T10:59:01.530Z",
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Set the product sort order to Price (High to Low). Keep the current category selected.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 22779,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 18491,
+      "cacheWriteTokens": 4282,
+      "outputTokens": 211,
+      "estimatedUsd": 0.0165252,
+      "durationMs": 4256
+    },
+    {
+      "stepId": "01a1016a-87ba-7697-8fe2-c885f23938d1:10",
+      "startedAt": "2026-10-03T10:59:05.799Z",
+      "file": "tests/ui/products.e2e.ts",
+      "titlePath": [
+        "Products screen",
+        "sorts a category by price in both directions"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The visible product cards are arranged by price in descending order, and the sort selection describes that same direction.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 4411,
+      "freshInputTokens": 3722,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 147,
+      "estimatedUsd": 0.009051799999999999,
+      "durationMs": 2502
+    }
+  ],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}

@@ -1,0 +1,14 @@
+{
+  "source": {
+    "repository": "https://github.com/slawekradzyminski/playwright-2026",
+    "branch": "hyr21",
+    "commit": "94dccc853d421746956ea2691ed5c4fcaa81bf95"
+  },
+  "original": 302,
+  "recreated": 302,
+  "extras": [
+    "tests/smoke.e2e.ts › Sonnet can navigate from login to registration"
+  ],
+  "missing": [],
+  "skipped": []
+}

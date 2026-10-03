@@ -1,0 +1,285 @@
+{
+  "inventory": {
+    "scenarios": 14,
+    "act": 10,
+    "assert": 11,
+    "extract": 1,
+    "newScenarios": 0,
+    "addedAct": 6,
+    "addedAssert": 2
+  },
+  "sourceCoverage": {
+    "original": 302,
+    "smoke": 1,
+    "missing": 0
+  },
+  "runs": {
+    "initial": {
+      "summary": {
+        "discovered": 303,
+        "selected": 14,
+        "executed": 14,
+        "passed": 13,
+        "failed": 1,
+        "flaky": 0,
+        "skipped": 289
+      },
+      "totals": {
+        "steps": 21,
+        "modelCalls": 39,
+        "inputTokens": 347817,
+        "freshInputTokens": 28066,
+        "cacheReadTokens": 247341,
+        "cacheWriteTokens": 72410,
+        "outputTokens": 5236,
+        "estimatedUsd": 0.3389852
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 10,
+          "modelCalls": 28,
+          "inputTokens": 312152,
+          "freshInputTokens": 76,
+          "cacheReadTokens": 241140,
+          "cacheWriteTokens": 70936,
+          "outputTokens": 3369,
+          "estimatedUsd": 0.25941000000000003
+        },
+        "agent.assert": {
+          "steps": 10,
+          "modelCalls": 10,
+          "inputTokens": 30933,
+          "freshInputTokens": 24043,
+          "cacheReadTokens": 6201,
+          "cacheWriteTokens": 689,
+          "outputTokens": 1599,
+          "estimatedUsd": 0.0670387
+        },
+        "agent.extract": {
+          "steps": 1,
+          "modelCalls": 1,
+          "inputTokens": 4732,
+          "freshInputTokens": 3947,
+          "cacheReadTokens": 0,
+          "cacheWriteTokens": 785,
+          "outputTokens": 268,
+          "estimatedUsd": 0.0125365
+        }
+      }
+    },
+    "final": {
+      "summary": {
+        "discovered": 303,
+        "selected": 14,
+        "executed": 14,
+        "passed": 14,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 289
+      },
+      "totals": {
+        "steps": 22,
+        "modelCalls": 37,
+        "inputTokens": 310194,
+        "freshInputTokens": 33585,
+        "cacheReadTokens": 239012,
+        "cacheWriteTokens": 37597,
+        "outputTokens": 5002,
+        "estimatedUsd": 0.25898489999999996
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 10,
+          "modelCalls": 25,
+          "inputTokens": 268315,
+          "freshInputTokens": 70,
+          "cacheReadTokens": 230648,
+          "cacheWriteTokens": 37597,
+          "outputTokens": 3000,
+          "estimatedUsd": 0.1702621
+        },
+        "agent.assert": {
+          "steps": 11,
+          "modelCalls": 11,
+          "inputTokens": 37420,
+          "freshInputTokens": 29841,
+          "cacheReadTokens": 7579,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1721,
+          "estimatedUsd": 0.07840780000000003
+        },
+        "agent.extract": {
+          "steps": 1,
+          "modelCalls": 1,
+          "inputTokens": 4459,
+          "freshInputTokens": 3674,
+          "cacheReadTokens": 785,
+          "cacheWriteTokens": 0,
+          "outputTokens": 281,
+          "estimatedUsd": 0.010315
+        }
+      }
+    },
+    "stability": {
+      "summary": {
+        "discovered": 315,
+        "selected": 18,
+        "executed": 18,
+        "passed": 18,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 297
+      },
+      "totals": {
+        "steps": 36,
+        "modelCalls": 74,
+        "inputTokens": 700296,
+        "freshInputTokens": 53382,
+        "cacheReadTokens": 563000,
+        "cacheWriteTokens": 83914,
+        "outputTokens": 9468,
+        "estimatedUsd": 0.523829
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 21,
+          "modelCalls": 59,
+          "inputTokens": 636451,
+          "freshInputTokens": 160,
+          "cacheReadTokens": 552377,
+          "cacheWriteTokens": 83914,
+          "outputTokens": 6720,
+          "estimatedUsd": 0.38778039999999997
+        },
+        "agent.assert": {
+          "steps": 12,
+          "modelCalls": 12,
+          "inputTokens": 50675,
+          "freshInputTokens": 42407,
+          "cacheReadTokens": 8268,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1964,
+          "estimatedUsd": 0.1061076
+        },
+        "agent.extract": {
+          "steps": 3,
+          "modelCalls": 3,
+          "inputTokens": 13170,
+          "freshInputTokens": 10815,
+          "cacheReadTokens": 2355,
+          "cacheWriteTokens": 0,
+          "outputTokens": 784,
+          "estimatedUsd": 0.029941
+        }
+      }
+    },
+    "replay": {
+      "summary": {
+        "discovered": 303,
+        "selected": 14,
+        "executed": 14,
+        "passed": 14,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 289
+      },
+      "totals": {
+        "steps": 22,
+        "modelCalls": 27,
+        "inputTokens": 203237,
+        "freshInputTokens": 34487,
+        "cacheReadTokens": 145484,
+        "cacheWriteTokens": 23266,
+        "outputTokens": 3932,
+        "estimatedUsd": 0.19555579999999997
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 10,
+          "modelCalls": 15,
+          "inputTokens": 160428,
+          "freshInputTokens": 42,
+          "cacheReadTokens": 137120,
+          "cacheWriteTokens": 23266,
+          "outputTokens": 1855,
+          "estimatedUsd": 0.10422300000000001
+        },
+        "agent.assert": {
+          "steps": 11,
+          "modelCalls": 11,
+          "inputTokens": 38362,
+          "freshInputTokens": 30783,
+          "cacheReadTokens": 7579,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1816,
+          "estimatedUsd": 0.0812418
+        },
+        "agent.extract": {
+          "steps": 1,
+          "modelCalls": 1,
+          "inputTokens": 4447,
+          "freshInputTokens": 3662,
+          "cacheReadTokens": 785,
+          "cacheWriteTokens": 0,
+          "outputTokens": 261,
+          "estimatedUsd": 0.010091
+        }
+      }
+    },
+    "warm": {
+      "summary": {
+        "discovered": 303,
+        "selected": 14,
+        "executed": 14,
+        "passed": 14,
+        "failed": 0,
+        "flaky": 0,
+        "skipped": 289
+      },
+      "totals": {
+        "steps": 22,
+        "modelCalls": 13,
+        "inputTokens": 52057,
+        "freshInputTokens": 34290,
+        "cacheReadTokens": 15618,
+        "cacheWriteTokens": 2149,
+        "outputTokens": 2138,
+        "estimatedUsd": 0.09845609999999999
+      },
+      "byApi": {
+        "agent.act": {
+          "steps": 10,
+          "modelCalls": 1,
+          "inputTokens": 9407,
+          "freshInputTokens": 4,
+          "cacheReadTokens": 7254,
+          "cacheWriteTokens": 2149,
+          "outputTokens": 173,
+          "estimatedUsd": 0.008561299999999999
+        },
+        "agent.assert": {
+          "steps": 11,
+          "modelCalls": 11,
+          "inputTokens": 38084,
+          "freshInputTokens": 30505,
+          "cacheReadTokens": 7579,
+          "cacheWriteTokens": 0,
+          "outputTokens": 1722,
+          "estimatedUsd": 0.07974579999999999
+        },
+        "agent.extract": {
+          "steps": 1,
+          "modelCalls": 1,
+          "inputTokens": 4566,
+          "freshInputTokens": 3781,
+          "cacheReadTokens": 785,
+          "cacheWriteTokens": 0,
+          "outputTokens": 243,
+          "estimatedUsd": 0.010149
+        }
+      }
+    }
+  },
+  "totalEstimatedUsd": 1.415811,
+  "limitations": "Small healthy-local-app sample. Initial 13/14 failure retained. Final 14/14 live, six changed scenarios repeated 3 times 18/18, replay-enabled 14/14, warm 14/14 with 9 full replays and cancellation end-mismatch handoff. No automatic retries. Costs exclude earlier experiments."
+}

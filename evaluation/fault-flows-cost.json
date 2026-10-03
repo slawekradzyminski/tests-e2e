@@ -1,0 +1,134 @@
+{
+  "report": ".e2e/fault-flows/report.json",
+  "pricing": {
+    "model": "claude-sonnet-5-5",
+    "verifiedOn": "2026-10-02",
+    "source": "https://platform.claude.com/docs/en/models/sonnet-5-5/overview",
+    "usdPerMillion": {
+      "freshInput": 2,
+      "cacheRead": 0.2,
+      "cacheWrite": 2.5,
+      "output": 10
+    }
+  },
+  "summary": {
+    "discovered": 303,
+    "selected": 1,
+    "executed": 1,
+    "passed": 1,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 302
+  },
+  "totals": {
+    "steps": 4,
+    "modelCalls": 7,
+    "inputTokens": 80643,
+    "freshInputTokens": 5350,
+    "cacheReadTokens": 45986,
+    "cacheWriteTokens": 29307,
+    "outputTokens": 910,
+    "estimatedUsd": 0.10226470000000001
+  },
+  "byApi": {
+    "agent.act": {
+      "steps": 3,
+      "modelCalls": 6,
+      "inputTokens": 74622,
+      "freshInputTokens": 18,
+      "cacheReadTokens": 45297,
+      "cacheWriteTokens": 29307,
+      "outputTokens": 743,
+      "estimatedUsd": 0.08979290000000001
+    },
+    "agent.assert": {
+      "steps": 1,
+      "modelCalls": 1,
+      "inputTokens": 6021,
+      "freshInputTokens": 5332,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 167,
+      "estimatedUsd": 0.0124718
+    }
+  },
+  "steps": [
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the product catalog"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Products from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 24900,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 9898,
+      "cacheWriteTokens": 14996,
+      "outputTokens": 162,
+      "estimatedUsd": 0.041101599999999995,
+      "durationMs": 3740
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the product catalog"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Products from the home page.",
+      "status": "passed",
+      "modelCalls": 2,
+      "inputTokens": 25688,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17522,
+      "cacheWriteTokens": 8160,
+      "outputTokens": 276,
+      "estimatedUsd": 0.026676400000000003,
+      "durationMs": 4208
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the product catalog"
+      ],
+      "repeat": 0,
+      "api": "agent.act",
+      "label": "Open Products from the home page.",
+      "status": "failed",
+      "modelCalls": 2,
+      "inputTokens": 24034,
+      "freshInputTokens": 6,
+      "cacheReadTokens": 17877,
+      "cacheWriteTokens": 6151,
+      "outputTokens": 305,
+      "estimatedUsd": 0.0220149,
+      "durationMs": 5188
+    },
+    {
+      "file": "tests/ui/home.e2e.ts",
+      "titlePath": [
+        "Home screen",
+        "opens the product catalog"
+      ],
+      "repeat": 0,
+      "api": "agent.assert",
+      "label": "The product catalog offers search, categories, sorting and product cards for shopping.",
+      "status": "passed",
+      "modelCalls": 1,
+      "inputTokens": 6021,
+      "freshInputTokens": 5332,
+      "cacheReadTokens": 689,
+      "cacheWriteTokens": 0,
+      "outputTokens": 167,
+      "estimatedUsd": 0.0124718,
+      "durationMs": 2754
+    }
+  ],
+  "limitations": "Token-based estimate, not an invoice. Standard API rates, 5-minute cache writes, no tax, contractual discounts, or account credits. Action replay and provider prompt caching are accounted separately."
+}
